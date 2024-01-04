@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg {
+  background-image: url("../assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
