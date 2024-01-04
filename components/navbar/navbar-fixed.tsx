@@ -12,7 +12,7 @@ export const NavBarFixed = ({ navEle }: Props) => {
   return (
     <div className="absolute w-full top-0 left-0 flex items-center justify-between p-6">
       <div>
-        <h1 className="text-neutral-50 font-medium text-3xl">LOGO</h1>
+        <h1 className="text-neutral-50 font-medium text-2xl">LOGO</h1>
       </div>
       <div className="flex gap-12 items-center">
         {navEle?.map((ele) => (
