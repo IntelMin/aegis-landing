@@ -11,4 +11,4 @@ const TokenomicsItem: React.FC = ({}) => {
   );
 };
 
-export default TokenomicsItem;
+export { TokenomicsItem };
