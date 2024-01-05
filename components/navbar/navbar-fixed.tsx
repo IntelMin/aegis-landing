@@ -71,7 +71,13 @@ export const NavBarFixed = ({ navEle }: Props) => {
           className="text-[#FFFFFF80] text-[16px] text-center w-full"
           href="link"
         >
-          Link
+          <div className="flex flex-col gap-2">
+            <p>Token Price</p>
+            <div className="flex items-center gap-2 justify-center">
+              <div className="w-[8px] h-[8px] rounded-full bg-white" />
+              <p className="text-white text-sm font-bold">$0.63</p>
+            </div>
+          </div>
         </Link>
       </div>
     </div>
