@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
 
 export const Title = (props: Props) => {
   return (
-    <div className="flex w-full">
+    <div className="flex flex-col gap-16 w-full">
       <div className="w-full">
         <div className="flex items-center gap-6">
           <h1
@@ -50,6 +51,20 @@ export const Title = (props: Props) => {
             </div>
           </div>
         </h1>
+      </div>
+      <div className="flex items-center gap-5">
+        <Link
+          href="#"
+          className="text-white text-lg font-[400] px-12 py-[18px] rounded-full bg-gradient-to-br from-[black] via-[#2b2b2b] to-[black]"
+        >
+          Buy $AEGIS Token
+        </Link>
+        <Link
+          href="#"
+          className="text-white text-lg font-[400] px-16 py-[18px] rounded-full bg-black border border-[#FFFFFF45]"
+        >
+          Live Chart
+        </Link>
       </div>
     </div>
   );
