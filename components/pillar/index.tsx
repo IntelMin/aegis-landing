@@ -5,7 +5,7 @@ type Props = {};
 
 export const PillarsSection = (props: Props) => {
   return (
-    <div className="bg flex flex-col gap-16 w-full h-screen px-16 py-[70px] mt-[60px]">
+    <div className="bg flex flex-col gap-16 w-full px-16 p-[70px] mt-[60px]">
       <div className="flex flex-col gap-3">
         <h1 className="text-[#3F3F46] text-[64px] font-[600] leading-[80px]">
           Discover Out
@@ -15,7 +15,7 @@ export const PillarsSection = (props: Props) => {
         </h2>
       </div>
       {/* Cards Section */}
-      <div className="grid grid-cols-3 gap-16 w-full">
+      <div className="grid grid-cols-3 gap-8 w-full">
         <Card
           title="Decentralized Trust"
           description="Aegis is founded on the principles of decentralization, trust is dispersed throughout our network. We create a transparent, flexible, and resilient trust architecture by utilizing cutting-edge technologies and AI."

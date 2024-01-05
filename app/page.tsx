@@ -2,6 +2,7 @@
 
 import {
   AboutSection,
+  ExploreSection,
   FAQSection,
   FooterSection,
   HomeSection,
@@ -18,6 +19,7 @@ export default function Home() {
       <HomeSection />
       <AboutSection />
       <PillarsSection />
+      <ExploreSection />
       <TokenomicsSection />
       <FAQSection />
       <FooterSection />
