@@ -7,11 +7,11 @@ export const AboutSection = (props: Props) => {
   return (
     <div
       id="about"
-      className="bg flex gap-20 items-center w-full h-screen pl-16 pr-[160px] py-[100px]"
+      className="bg flex gap-20 items-center w-full min-h-screen pl-16 pr-[160px] py-[100px]"
     >
       <div className="flex flex-col items-center gap-16">
         <div className="flex flex-col gap-6">
-          <h1 className="text-[#3F3F46] text-8xl font-[700]">About</h1>
+          <h1 className="text-[#3F3F46] text-8xl font-[600]">About</h1>
           <h2 className="text-[#FFFFFF] text-7xl font-[700]">Aegis</h2>
         </div>
         <Image

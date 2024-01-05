@@ -2,10 +2,12 @@
 
 import {
   AboutSection,
+  ExploreSection,
   FAQSection,
   FooterSection,
   HomeSection,
   NavbarSection,
+  PillarsSection,
   TokenomicsSection,
 } from "@/components";
 
@@ -16,6 +18,8 @@ export default function Home() {
       <NavbarSection />
       <HomeSection />
       <AboutSection />
+      <PillarsSection />
+      <ExploreSection />
       <TokenomicsSection />
       <FAQSection />
       <FooterSection />
