@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html{
+body,
+html {
   box-sizing: border-box;
 }
 
@@ -21,6 +22,25 @@ body, html{
 }
 .bg-footer {
   background-image: url("../assets/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bank {
+  background-image: url("../assets/bank.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clock {
+  background-image: url("../assets/clock.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lock {
+  background-image: url("../assets/lock.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,4 +139,8 @@ body, html{
 
 .desc-con {
   clip-path: polygon(95% 0, 100% 26%, 100% 100%, 0 100%, 0 0);
+}
+
+.card-clip {
+  clip-path: polygon(80% 0, 100% 18%, 100% 100%, 0 100%, 0 0);
 }
