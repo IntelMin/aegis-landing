@@ -5,6 +5,7 @@ import { HomeSection } from "./home";
 import { NavbarSection } from "./navbar";
 import { TokenomicsSection } from "./tokenomics";
 import { PillarsSection } from "./pillar";
+import { ExploreSection } from "./explore";
 import { Provider } from "./provider";
 
 export {
@@ -15,5 +16,6 @@ export {
   NavbarSection,
   TokenomicsSection,
   PillarsSection,
+  ExploreSection,
   Provider
 };

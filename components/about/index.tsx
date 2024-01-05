@@ -7,7 +7,7 @@ export const AboutSection = (props: Props) => {
   return (
     <div
       id="about"
-      className="bg flex gap-20 items-center w-full h-screen pl-16 pr-[160px] py-[100px]"
+      className="bg flex gap-20 items-center w-full min-h-screen pl-16 pr-[160px] py-[100px]"
     >
       <div className="flex flex-col items-center gap-16">
         <div className="flex flex-col gap-6">

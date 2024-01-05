@@ -8,11 +8,12 @@ type Props = {
 };
 
 export const Card = ({ title, description, image, translate }: Props) => {
+    const words = description.split(" ");
   return (
     <div
-      className={`col-span-1 max-w-[410px] flex flex-col justify-between border-2 border-[#27272A] rounded relative card-clip ${translate}`}
+      className={`col-span-1 w-[380px] max-w-[380px] flex flex-col justify-between border-2 border-[#27272A] rounded relative card-clip ${translate}`}
     >
-      <div className="w-[100px] h-[150px] bg-[#27272A] absolute -top-[58px] left-[88.5%] rotate-[-43deg]" />
+      <div className="w-[100px] h-[150px] bg-[#27272A] absolute -top-[58px] left-[88.4%] rotate-[-42deg]" />
       <div
         className="absolute top-0 left-0 w-full h-full"
         style={{
@@ -25,9 +26,13 @@ export const Card = ({ title, description, image, translate }: Props) => {
         <h1 className="text-[28px] text-white font-[600] -translate-y-6">
           {title}
         </h1>
-        <p className="text-sm text-[#71717A] font-[400] leading-[30px] -translate-y-6">
-          {description}
-        </p>
+        <div className="text-sm text-[#71717A] font-[400] leading-[30px] -translate-y-6">
+          {words.map((word, index) => (
+            <span key={index} className={word === "Aegis" ? "text-white" : ""}>
+              {word}{" "}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );

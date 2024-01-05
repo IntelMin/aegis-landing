@@ -20,8 +20,16 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bg-footer {
   background-image: url("../assets/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-circumcircle {
+  background-image: url("../assets/circumcircleBg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

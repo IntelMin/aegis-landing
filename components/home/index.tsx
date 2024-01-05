@@ -8,8 +8,8 @@ type Props = {};
 
 export const HomeSection = (props: Props) => {
   return (
-    <div id="home" className="bg-home w-full min-h-screen pt-[100px] px-16">
-      <div className="py-12 w-full">
+    <div id="home" className="bg-home w-full min-h-screen pt-[100px]">
+      <div className="py-12 px-16">
         <Title />
       </div>
     </div>
