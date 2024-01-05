@@ -24,7 +24,7 @@ export const Question: React.FC<QuestionProps> = ({
       onClick={onClick}
     >
       <span>{`${index} .`}</span>
-      <span className="font-semibold text-2xl flex-1">{question}</span>
+      <span className="font-normal text-2xl flex-1 color-[#FFF]">{question}</span>
       <div
         className={`transform transition duration-300 ease-in-out ${
           isOpen ? "rotate-180" : "rotate-0"
