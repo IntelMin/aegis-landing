@@ -46,7 +46,7 @@ export const FAQSection: React.FC = () => {
               className="text-lg font-semibold  text-white"
               index={(index + 1).toString()}
             />
-            <motion.div animate={  openIndex === index ? { height } : {}} className="overflow-hidden">
+            <motion.div animate={  openIndex === index ? { height } : { height: 0 }} className="overflow-hidden">
               {openIndex === index && (
                 <Answer answer={faq.answer} refer={ref} />
               )}
