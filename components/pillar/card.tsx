@@ -8,6 +8,7 @@ type Props = {
 };
 
 export const Card = ({ title, description, image, translate }: Props) => {
+    const words = description.split(" ");
   return (
     <div
       className={`col-span-1 max-w-[410px] flex flex-col justify-between border-2 border-[#27272A] rounded relative card-clip ${translate}`}
@@ -25,9 +26,13 @@ export const Card = ({ title, description, image, translate }: Props) => {
         <h1 className="text-[28px] text-white font-[600] -translate-y-6">
           {title}
         </h1>
-        <p className="text-sm text-[#71717A] font-[400] leading-[30px] -translate-y-6">
-          {description}
-        </p>
+        <div className="text-sm text-[#71717A] font-[400] leading-[30px] -translate-y-6">
+          {words.map((word, index) => (
+            <span key={index} className={word === "Aegis" ? "text-white" : ""}>
+              {word}{" "}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
