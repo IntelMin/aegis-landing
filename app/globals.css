@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body, html{
+  box-sizing: border-box;
+}
+
 .bg-home {
   background-image: url("../assets/bg.png");
   background-position: center;
@@ -105,4 +109,8 @@
   );
   backdrop-filter: blur(15px);
   clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.desc-con {
+  clip-path: polygon(95% 0, 100% 26%, 100% 100%, 0 100%, 0 0);
 }
