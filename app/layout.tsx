@@ -38,11 +38,7 @@ export const metadata: Metadata = {
   description: "Audit your code for security vulnerabilities",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({}) {
   return (
     <html lang="en">
       <body className={`${satoshi.className} bg-black`}>
