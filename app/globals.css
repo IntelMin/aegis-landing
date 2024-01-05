@@ -2,3 +2,107 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-home {
+  background-image: url("../assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg {
+  background-image: url("../assets/dottedBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-bg {
+  background-image: url("../assets/logoBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-ele-bg {
+  height: 100px;
+}
+
+.nav-ele-bg:nth-child(1) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.12) 10.8%,
+    rgba(255, 255, 255, 0) 97%
+  );
+  backdrop-filter: blur(15px);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+.nav-ele-bg:nth-child(3) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.12) 10.8%,
+    rgba(255, 255, 255, 0) 97%
+  );
+  backdrop-filter: blur(15px);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+}
+
+.nav-ele-bg:nth-child(2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.12) 10.8%,
+    rgba(255, 255, 255, 0) 97%
+  );
+  backdrop-filter: blur(15px);
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 30% 100%);
+}
+
+.nav-absolute-ele {
+  background: #222224;
+  clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+}
+
+.nav-ele-bg:nth-child(4) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 14.11%,
+    rgba(255, 255, 255, 0.1) 126.47%
+  );
+  backdrop-filter: blur(15px);
+}
+
+.nav-ele-bg:nth-child(4) {
+  clip-path: polygon(-22% 0, 125% 0, 100% 100%, 0% 100%);
+}
+
+.nav-ele-bg:nth-child(5) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 10.8%,
+    rgba(255, 255, 255, 0.12) 97%
+  );
+  backdrop-filter: blur(15px);
+  clip-path: polygon(23% 0, 100% 0, 75% 100%, 0 100%);
+}
+.nav-ele-bg:nth-child(6) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 10.8%,
+    rgba(255, 255, 255, 0.12) 97%
+  );
+  backdrop-filter: blur(15px);
+  clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+}
+
+.nav-ele-bg:nth-child(7) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 10.8%,
+    rgba(255, 255, 255, 0.12) 97%
+  );
+  backdrop-filter: blur(15px);
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
+}
