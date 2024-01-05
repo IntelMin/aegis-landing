@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { NavBarFixed } from "./navbar-fixed";
 import { NavbarScroll } from "./navbar-scroll";
+import { AnimatePresence } from "framer-motion";
 
 type Props = {};
 
@@ -42,9 +43,14 @@ export const NavbarSection = (props: Props) => {
     });
   }, []);
 
-  return isScrolling ? (
-    <NavbarScroll isScrolling={isScrolling} navEle={navEle} />
-  ) : (
-    <NavBarFixed navEle={navEle} />
+  return (
+    <>
+      <AnimatePresence>
+        isScrolling ? (
+        <NavbarScroll isScrolling={isScrolling} navEle={navEle} />
+        ) : (
+        <NavBarFixed navEle={navEle} />)
+      </AnimatePresence>
+    </>
   );
 };
