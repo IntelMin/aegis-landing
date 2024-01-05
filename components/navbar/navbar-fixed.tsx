@@ -10,30 +10,65 @@ type Props = {
 
 export const NavBarFixed = ({ navEle }: Props) => {
   return (
-    <div className="absolute w-full top-0 left-0 flex items-center justify-between p-6">
-      <div>
-        <h1 className="text-neutral-50 font-medium text-2xl">LOGO</h1>
-      </div>
-      <div className="flex gap-12 items-center">
-        {navEle?.map((ele) => (
+    <div className="absolute w-[100vw] top-0 left-0 flex items-center nav-container">
+      <div className="w-[14%] flex items-center justify-center py-8 nav-ele-bg">
+        <div>
           <Link
-            key={ele.name}
-            href={ele.url}
-            className={`text-lg text-neutral-400`}
+            className="text-[#FFFFFF80] text-[18px] text-center w-full"
+            href="link"
           >
-            {ele.name}
+            Link
           </Link>
-        ))}
+        </div>
       </div>
-      <div>
+      <div className="w-[14%] flex items-center justify-center py-8 nav-ele-bg">
         <Link
-          href="/"
-          className="text-sm text-neutral-200 bg-zinc-400 rounded-full cursor-pointer py-3 px-6"
-          style={{
-            backgroundImage: "linear-gradient(135deg, #566070 15%, #060606)",
-          }}
+          className="text-[#FFFFFF80] text-[18px] text-center w-full"
+          href="link"
         >
-          Open dApp
+          Link
+        </Link>
+      </div>
+      <div className="w-[14%] flex items-center justify-center py-8 nav-ele-bg">
+        <Link
+          className="text-[#FFFFFF80] text-[18px] text-center w-full"
+          href="link"
+        >
+          Link
+        </Link>
+      </div>
+      <div className="w-[16%] flex items-center justify-center py-8 nav-ele-bg relative">
+        <Link
+          className="text-[#FFFFFF80] text-[18px] text-center w-full z-[2]"
+          href="link"
+        >
+          Link
+        </Link>
+        <div className="absolute w-[100%] h-[150%] bottom-0 left-0 -translate-x-[40%] nav-absolute-ele" />
+        <div className="absolute w-[100%] h-[160%] bottom-0 left-0 translate-x-[40%] nav-absolute-ele" />
+      </div>
+      <div className="w-[17.5%] flex items-center justify-center py-8 nav-ele-bg">
+        <Link
+          className="text-[#FFFFFF80] text-[18px] text-center w-full"
+          href="link"
+        >
+          Link
+        </Link>
+      </div>
+      <div className="w-[12.5%] flex items-center justify-center py-8 nav-ele-bg">
+        <Link
+          className="text-[#FFFFFF80] text-[18px] text-center w-full"
+          href="link"
+        >
+          Link
+        </Link>
+      </div>
+      <div className="w-[12%] flex items-center justify-center py-8 nav-ele-bg">
+        <Link
+          className="text-[#FFFFFF80] text-[18px] text-center w-full"
+          href="link"
+        >
+          Link
         </Link>
       </div>
     </div>
