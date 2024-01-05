@@ -1,6 +1,13 @@
 "use client";
 
-import { AboutSection, HomeSection, NavbarSection } from "@/components";
+import {
+  AboutSection,
+  FAQSection,
+  FooterSection,
+  HomeSection,
+  NavbarSection,
+  TokenomicsSection,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -9,6 +16,9 @@ export default function Home() {
       <NavbarSection />
       <HomeSection />
       <AboutSection />
+      <TokenomicsSection />
+      <FAQSection />
+      <FooterSection />
     </main>
-  )
+  );
 }

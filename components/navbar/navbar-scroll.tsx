@@ -19,7 +19,7 @@ export const NavbarScroll = ({ isScrolling, navEle }: Props) => {
       animate={isScrolling ? "animate" : "initial"}
       exit="exit"
       variants={NavAnimations}
-      className="fixed left-1/2 -translate-x-1/2 flex items-center gap-8 top-4 w-fit bg-[#ffffff14] border border-[#ffffff14] pl-6 pr-2 py-2 rounded-full"
+      className="fixed left-1/2 z-[999] -translate-x-1/2 flex items-center gap-8 top-4 w-fit bg-[#ffffff14] border border-[#ffffff14] pl-6 pr-2 py-2 rounded-full"
     >
       {navEle?.map((ele) => (
         <Link
