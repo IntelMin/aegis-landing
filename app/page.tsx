@@ -1,10 +1,14 @@
 "use client";
 
+import { AboutSection, HomeSection, NavbarSection } from "@/components";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col bg-black relative">
       {/* // TODO - Add your content here */}
-      <h3 className="text-blue-300">Hello World</h3>
+      <NavbarSection />
+      <HomeSection />
+      <AboutSection />
     </main>
   )
 }
