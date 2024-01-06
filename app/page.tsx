@@ -10,6 +10,9 @@ import {
   PillarsSection,
   TokenomicsSection,
 } from "@/components";
+import Demo from "@/components/demo";
+import Partners from "@/components/partners";
+import Roadmap from "@/components/roadmap";
 
 export default function Home() {
   return (
@@ -20,7 +23,9 @@ export default function Home() {
       <AboutSection />
       <PillarsSection />
       <ExploreSection />
-      <TokenomicsSection />
+      <Demo />
+      <Roadmap />
+      <Partners />
       <FAQSection />
       <FooterSection />
     </main>

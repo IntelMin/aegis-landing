@@ -3,7 +3,7 @@ import React from "react";
 
 export const TokenomicsSection = () => {
   return (
-    <div className="bg-circle flex flex-col gap-16 items-center w-full min-h-screen px-16 text-white">
+    <div className="flex flex-col gap-16 mt-[100px] items-center w-full px-16 text-white">
       <h2 className="text-4xl font-bold text-center">Tokenomics</h2>
       {/* Polygon section */}
       <div className="flex gap-5 relative">
