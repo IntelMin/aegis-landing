@@ -1,6 +1,8 @@
-import Image from "next/image";
+"use client";
+
 import React from "react";
 import { DetailCard } from "./detail-card";
+import Tilt from "react-parallax-tilt";
 
 type Props = {};
 
@@ -24,7 +26,7 @@ export const ExploreSection = (props: Props) => {
             combination of tools to help you <br />
             navigate your journey in Web3 in the most secure way:
           </p>
-          <div className="mt-4 w-full overflow-y-scroll flex items-center gap-8 z-[20]">
+          <div className="w-full overflow-y-scroll py-10 px-4 flex items-center gap-8 z-[20]">
             <DetailCard
               title="Token Analysis"
               description="Analyze tokens involved in the transactions to get information such as name, symbol, decimals, price, supply, liquidity, holders, transfers, and more."
