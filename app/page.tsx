@@ -8,6 +8,7 @@ import {
   NavbarSection,
   TokenomicsSection,
 } from "@/components";
+import Demo from "@/components/demo";
 import Partners from "@/components/partners";
 import Roadmap from "@/components/roadmap";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <NavbarSection />
       <HomeSection />
       <AboutSection />
+      <Demo />
       <TokenomicsSection />
       <Roadmap />
       <Partners />
