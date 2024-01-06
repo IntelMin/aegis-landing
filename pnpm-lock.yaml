@@ -8,6 +8,9 @@ dependencies:
   '@studio-freight/lenis':
     specifier: ^1.0.33
     version: 1.0.33
+  awesome-react-stepper:
+    specifier: ^1.1.1
+    version: 1.1.1(react@18.2.0)
   framer-motion:
     specifier: ^10.17.6
     version: 10.17.6(react-dom@18.2.0)(react@18.2.0)
@@ -598,6 +601,14 @@ packages:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /awesome-react-stepper@1.1.1(react@18.2.0):
+    resolution: {integrity: sha512-F2H5dR2tl2xW5a+V6lozc2ReTElPzHGhBO5HF+V/HcM+uWz9RRoVBWis0dNfY+veUc9F3MhHlep3bknLax+6GQ==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /axe-core@4.7.0:
     resolution: {integrity: sha512-M0JtH+hlOL5pLQwHOLNYZaXuhqmvS8oExsqB1SBYgA4Dk7u/xx+YdGHXaK5pyUfed5mYXdlYiphWq3G8cRi5JQ==}
