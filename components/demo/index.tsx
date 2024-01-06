@@ -19,11 +19,11 @@ export const Demo = () => {
   ];
 
   return (
-    <div id="demo" className="bg-circle">
-      <div className="w-full pt-[20px] flex">
+    <div id="demo" className="bg-circle mb-10">
+      <div className="w-full pt-[20px] flex bg">
         <div className="flex-cols w-[40%]">
-          <div className="text-white  text-start font-normal space-y-10 mt-4 pl-20 pr-40">
-            <h1 className="text-6xl text-start text-[#27272A] font-semibold ">
+          <div className="text-white text-start font-normal space-y-10 mt-4 pl-20 pr-10">
+            <h1 className="text-6xl text-start text-[#27272A] font-semibold leading-[70px]">
               Aegis <br />
               <span className="text-white">dApp</span> demo
             </h1>
@@ -40,11 +40,11 @@ export const Demo = () => {
               delectus odio vitae, culpa quisquam!
             </p>
           </div>
-          <div className="grid grid-cols-2 px-40 mt-4">
+          <div className="grid grid-cols-2 gap-2 pl-10 mt-4">
             {demoImages.map((demo, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center mt-4 "
+                className="col-span-1 flex justify-center items-center mt-4 "
               >
                 <Image
                   src={demo.url}
