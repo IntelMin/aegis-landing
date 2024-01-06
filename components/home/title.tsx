@@ -55,13 +55,13 @@ export const Title = (props: Props) => {
       <div className="flex items-center gap-5">
         <Link
           href="#"
-          className="text-white text-lg font-[400] px-12 py-[18px] rounded-full bg-gradient-to-br from-[black] via-[#2b2b2b] to-[black]"
+          className="text-white hover:text-black text-lg font-[400] px-12 py-[18px] rounded-full bg-gradient-to-br from-[black] via-[#2b2b2b] to-[black]  hover:from-[white] hover:via-[white] hover:to-[white] transition-all ease-in duration-350"
         >
           Buy $AEGIS Token
         </Link>
         <Link
           href="#"
-          className="text-white text-lg font-[400] px-16 py-[18px] rounded-full bg-black border border-[#FFFFFF45]"
+          className="text-white text-lg font-[400] px-16 py-[18px] rounded-full bg-black hover:bg-[#82828245] border border-[#FFFFFF85] transition-all ease-in duration-350"
         >
           Live Chart
         </Link>
