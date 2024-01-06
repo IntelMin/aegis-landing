@@ -37,7 +37,7 @@ export const Title = (props: Props) => {
                 height={60}
                 className="z-[6] relative"
               />
-              <div className="absolute bottom-full left-full h-full w-[700px] z-[1] -translate-x-6 translate-y-3">
+              <div className="absolute bottom-full left-full h-full w-[600px] z-[1] -translate-x-6 translate-y-3">
                 <div className="py-4 px-6 bg-[#18181B] rounded-lg desc-con">
                   <p className="text-[20px] text-[#71717A] font-[300] leading-[32px]">
                     <span className="text-white font-[500]">Aegis</span> is
