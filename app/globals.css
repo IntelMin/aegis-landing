@@ -7,6 +7,16 @@ html {
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background: transparent;
+  text-shadow: 0px 0px 2px #d9d9d9;
+}
+
+::selection {
+  background: transparent;
+  text-shadow: 0px 0px 2px #d9d9d9;
+}
+
 .bg-home {
   background-image: url("../assets/bg.png");
   background-position: center;
@@ -33,6 +43,38 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bg-circle {
+  background-image: url("../assets/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.common-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-pink-noise {
+  background-image: url("../assets/pink-noise.png");
+}
+.bg-green-noise {
+  background-image: url("../assets/green-noise.png");
+}
+.bg-purple-noise {
+  background-image: url("../assets/purple-noise.png");
+}
+.bg-gray-noise {
+  background-image: url("../assets/gray-noise.png");
+}
+.bg-orange-noise {
+  background-image: url("../assets/orange-noise.png");
+}
+.bg-blue-noise {
+  background-image: url("../assets/blue-noise.png");
 }
 
 .bank {
