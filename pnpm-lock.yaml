@@ -23,6 +23,9 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
+  react-parallax-tilt:
+    specifier: ^1.7.181
+    version: 1.7.181(react-dom@18.2.0)(react@18.2.0)
   react-social-icons:
     specifier: ^6.7.0
     version: 6.7.0(react-dom@18.2.0)(react@18.2.0)
@@ -2254,6 +2257,16 @@ packages:
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
+
+  /react-parallax-tilt@1.7.181(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-oIwsvNvJ0VCC06K/imdwLlm3xaGYWjUf51WgUOt3hYviQAr1kAcoP2PUjdq8PHTzSWXAJGsBv+pMfQnVk2mr/Q==}
+    peerDependencies:
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /react-social-icons@6.7.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-SgqFyhK8CNNkthPDUCVnvb6n/wa2LxAFrFKT7/0aDDXZfEkQkZnfraJnO36YJGL6iXeIchBs8aKam1awbJv9QA==}

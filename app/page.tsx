@@ -2,10 +2,12 @@
 
 import {
   AboutSection,
+  ExploreSection,
   FAQSection,
   FooterSection,
   HomeSection,
   NavbarSection,
+  PillarsSection,
   TokenomicsSection,
 } from "@/components";
 import Demo from "@/components/demo";
@@ -19,7 +21,9 @@ export default function Home() {
       <NavbarSection />
       <HomeSection />
       <AboutSection />
-      <Demo />
+      <PillarsSection />
+      <ExploreSection />
+        <Demo />
       <TokenomicsSection />
       <Roadmap />
       <Partners />

@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html{
+body,
+html {
   box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: transparent;
+  text-shadow: 0px 0px 2px #d9d9d9;
+}
+
+::selection {
+  background: transparent;
+  text-shadow: 0px 0px 2px #d9d9d9;
 }
 
 .bg-home {
@@ -19,8 +30,67 @@ body, html{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bg-footer {
   background-image: url("../assets/footer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-circumcircle {
+  background-image: url("../assets/circumcircleBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-circle {
+  background-image: url("../assets/circle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.common-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-pink-noise {
+  background-image: url("../assets/pink-noise.png");
+}
+.bg-green-noise {
+  background-image: url("../assets/green-noise.png");
+}
+.bg-purple-noise {
+  background-image: url("../assets/purple-noise.png");
+}
+.bg-gray-noise {
+  background-image: url("../assets/gray-noise.png");
+}
+.bg-orange-noise {
+  background-image: url("../assets/orange-noise.png");
+}
+.bg-blue-noise {
+  background-image: url("../assets/blue-noise.png");
+}
+
+.bank {
+  background-image: url("../assets/bank.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.clock {
+  background-image: url("../assets/clock.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lock {
+  background-image: url("../assets/lock.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -119,4 +189,8 @@ body, html{
 
 .desc-con {
   clip-path: polygon(95% 0, 100% 26%, 100% 100%, 0 100%, 0 0);
+}
+
+.card-clip {
+  clip-path: polygon(80% 0, 100% 18%, 100% 100%, 0 100%, 0 0);
 }
