@@ -23,8 +23,7 @@ export default function Home() {
       <AboutSection />
       <PillarsSection />
       <ExploreSection />
-        <Demo />
-      <TokenomicsSection />
+      <Demo />
       <Roadmap />
       <Partners />
       <FAQSection />
