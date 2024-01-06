@@ -1,6 +1,8 @@
-import Image from "next/image";
+"use client";
+
 import React from "react";
 import { DetailCard } from "./detail-card";
+import Tilt from "react-parallax-tilt";
 
 type Props = {};
 
@@ -24,30 +26,42 @@ export const ExploreSection = (props: Props) => {
             combination of tools to help you <br />
             navigate your journey in Web3 in the most secure way:
           </p>
-          <div className="mt-4 w-full overflow-y-scroll flex items-center gap-8 z-[20]">
+          <div className="w-full overflow-y-scroll py-10 px-4 flex items-center gap-8 z-[20]">
             <DetailCard
               title="Token Analysis"
               description="Analyze tokens involved in the transactions to get information such as name, symbol, decimals, price, supply, liquidity, holders, transfers, and more."
               image="/token.png"
-              gradient="linear-gradient(46deg, #DC5C7F 4.4%, #E7A286 117.19%)"
+              gradient="pink-noise"
             />
             <DetailCard
               title="Token Audits"
               description="Verify the legitimacy, functionality, and security of any token. It helps to identify any red flags or issues."
               image="/token-audit.png"
-              gradient="linear-gradient(46deg, #67C95F 4.4%, #1ED8D1 117.19%)"
+              gradient="green-noise"
             />
             <DetailCard
               title="Code Audits"
               description="Run quick code audits, unit testing, test environment, test execution, and code quality checks on any smart contract."
               image="/code-audit.png"
-              gradient="linear-gradient(46deg, #8698A6 4.4%, #DFE4E7 117.19%)"
+              gradient="gray-noise"
             />
             <DetailCard
               title="Protocol Monitoring"
-              description="Verify the legitimacy, functionality, and security of any token. It helps to identify any red flags or issues."
+              description="Monitor systems and protocols to detects potential exploits, hacks, and threats dapp."
               image="/protocol.png"
-              gradient="linear-gradient(46deg, #7000FF 4.4%, #F258FF 117.19%)"
+              gradient="purple-noise"
+            />
+            <DetailCard
+              title="Bug Bounty"
+              description="Participate in Aegis’s bug bounty programs and earn rewards for finding and reporting vulnerabilities."
+              image="/bug.png"
+              gradient="orange-noise"
+            />
+            <DetailCard
+              title="Pentesting"
+              description="Test the security and resilience of protocols and dapps. You can as well as learn from the best practices and techniques of whitehats."
+              image="/pentest.png"
+              gradient="blue-noise"
             />
           </div>
         </div>
