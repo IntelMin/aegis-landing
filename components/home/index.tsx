@@ -10,9 +10,17 @@ export const HomeSection = (props: Props) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const updateMousePosition = (event: React.MouseEvent) => {
+    //? Center as center of screen;
+    // setMousePosition({
+    //   x: (event.clientX / window.innerWidth) * 2 - 1,
+    //   y: -(event.clientY / window.innerHeight) * 2 + 1,
+    // });
+    //? Center as center of model;
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
     setMousePosition({
-      x: (event.clientX / window.innerWidth) * 2 - 1,
-      y: -(event.clientY / window.innerHeight) * 2 + 1,
+      x: ((event.clientX - 0) / centerX) * 2 - 1,
+      y: -((event.clientY - 500) / centerY) * 2 + 1,
     });
   };
 

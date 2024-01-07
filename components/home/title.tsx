@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { Robo } from "./robo";
+import { PerspectiveCamera } from "@react-three/drei";
 
 type MouseProps = {
   x: number;
@@ -80,6 +81,7 @@ export const Title = (props: Props) => {
           <ambientLight intensity={1.7} />
           <directionalLight position={[10, 10, 10]} intensity={3} />
           <pointLight position={[10, 10, 10]} />
+          {/* <PerspectiveCamera makeDefault position={[-10, 0, -90]} fov={75} /> */}
           <Robo mousePosition={props.mousePosition} />
         </Canvas>
       </div>
