@@ -37,7 +37,7 @@ export const FAQSection: React.FC = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="pb-3 bg-none border-b border-[#18181B] w-[70%]"
+            className="pb-1 bg-none border-b border-[#18181B] w-[70%]"
           >
             <Question
               question={faq.question}

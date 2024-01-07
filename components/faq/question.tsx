@@ -20,7 +20,7 @@ export const Question: React.FC<QuestionProps> = ({
 }) => {
   return (
     <div
-      className={`flex justify-between items-center gap-x-2.5 p-4 cursor-pointer border-0 ${className}`}
+      className={`flex justify-between items-center gap-x-2.5 px-4 py-2  cursor-pointer border-0 ${className}`}
       onClick={onClick}
     >
       <span>{`${index} .`}</span>
