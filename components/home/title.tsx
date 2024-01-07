@@ -1,12 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Canvas } from "@react-three/fiber";
+import { Robo } from "./robo";
 
-type Props = {};
+type MouseProps = {
+  x: number;
+  y: number;
+};
+
+type Props = {
+  mousePosition: MouseProps;
+};
 
 export const Title = (props: Props) => {
   return (
-    <div className="flex flex-col gap-16 w-full">
+    <div className="flex flex-col gap-8 w-full">
       <div className="w-full">
         <div className="flex items-center gap-6">
           <h1
@@ -52,10 +61,10 @@ export const Title = (props: Props) => {
           </div>
         </h1>
       </div>
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-5 z-[10]">
         <Link
           href="#"
-          className="text-white hover:text-black text-lg font-[400] px-12 py-[18px] rounded-full bg-gradient-to-br from-[black] via-[#2b2b2b] to-[black]  hover:from-[white] hover:via-[white] hover:to-[white] transition-all ease-in duration-350"
+          className="z-[10] text-white hover:text-black text-lg font-[400] px-12 py-[18px] rounded-full bg-gradient-to-br from-[black] via-[#2b2b2b] to-[black]  hover:from-[white] hover:via-[white] hover:to-[white] transition-all ease-in duration-350"
         >
           Buy $AEGIS Token
         </Link>
@@ -65,6 +74,14 @@ export const Title = (props: Props) => {
         >
           Live Chart
         </Link>
+      </div>
+      <div className="w-1/2 -translate-x-24 mt-4">
+        <Canvas className="h-[400px]" style={{ height: "350px" }}>
+          <ambientLight intensity={1.7} />
+          <directionalLight position={[10, 10, 10]} intensity={3} />
+          <pointLight position={[10, 10, 10]} />
+          <Robo mousePosition={props.mousePosition} />
+        </Canvas>
       </div>
     </div>
   );

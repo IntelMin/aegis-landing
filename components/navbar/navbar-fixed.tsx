@@ -11,11 +11,11 @@ type Props = {
 
 export const NavBarFixed = ({ navEle }: Props) => {
   return (
-    <div className="absolute w-[100vw] top-0 left-0 flex items-center nav-container">
+    <div className="absolute w-[100vw] top-0 left-0 flex items-center nav-container z-[100]">
       <div className="w-[10%] flex items-center justify-center nav-ele-bg">
         <div>
           <Link
-            className="text-[#FFFFFF80] text-[16px] text-center w-full"
+            className="text-[#FFFFFF80] hover:scale-[2.1] transition-all ease-in duration-150 text-[16px] text-center w-full"
             href="link"
           >
             About
