@@ -25,8 +25,8 @@ export const HomeSection = (props: Props) => {
   };
 
   return (
-    <div id="home" className="bg-home w-full" onMouseMove={updateMousePosition}>
-      <div className="w-full min-h-screen pt-[100px] relative">
+    <div id="home" className="bg-black w-full" onMouseMove={updateMousePosition}>
+      <div className="w-full h-full pt-[100px] relative">
         <Image
           src="/linear.png"
           alt="linear"
