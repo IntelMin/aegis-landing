@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import * as THREE from "three";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import { easing } from "maath";
 
 type MouseProps = {
@@ -15,7 +16,13 @@ type Props = {
 
 export const Robo = (props: Props) => {
   const mesh = useRef<THREE.Mesh | null>(null);
-  const gltf = useLoader(GLTFLoader, "./images/loginavatar.glb");
+  const dracoLoader = new DRACOLoader();
+  dracoLoader.setDecoderPath("/draco-decoders/");
+  const gltf = useLoader(GLTFLoader, "./images/loginavatar.glb", (loader) => {
+    loader.setDRACOLoader(dracoLoader);
+  });
+
+  // const gltf = useLoader(GLTFLoader, "./images/robo.glb");
   const [dummy] = useState(() => new THREE.Object3D());
   useFrame((state, dt) => {
     dummy.position.set(

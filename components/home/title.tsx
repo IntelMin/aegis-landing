@@ -1,6 +1,6 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { Robo } from "./robo";
 import { PerspectiveCamera } from "@react-three/drei";
