@@ -20,11 +20,11 @@ export const Question: React.FC<QuestionProps> = ({
 }) => {
   return (
     <div
-      className={`flex justify-between items-center gap-x-2.5 px-4 py-2  cursor-pointer border-0 ${className}`}
+      className={`flex justify-between items-start md:items-center gap-x-2.5 px-4 py-2  cursor-pointer border-0 ${className}`}
       onClick={onClick}
     >
-      <span>{`${index} .`}</span>
-      <span className="font-normal text-2xl flex-1 color-[#FFF]">{question}</span>
+      <span className="max-md:text-lg">{`${index} .`}</span>
+      <span className="font-normal text-lg md:text-2xl flex-1 color-[#FFF]">{question}</span>
       <div
         className={`transform transition duration-300 ease-in-out ${
           isOpen ? "rotate-180" : "rotate-0"

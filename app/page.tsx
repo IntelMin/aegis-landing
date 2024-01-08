@@ -24,13 +24,11 @@ export default function Home() {
       <AboutSection />
       <PillarsSection />
       <ExploreSection />
+      {/* <Demo /> */}
       <Partners />
-      {/* 
-      <Demo />
-      <Roadmap />
-      <FAQSection />
+      {/* <Roadmap /> */}
+      <FAQSection /> 
       <FooterSection /> 
-      */}
     </main>
   );
 }
