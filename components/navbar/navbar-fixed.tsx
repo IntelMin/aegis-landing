@@ -1,4 +1,4 @@
-import { TokenData } from "@/types/tokendata";
+import { TokenDetail } from "@/types/tokendata";
 import { isViewportValid } from "@/utils/mediaQuery";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +11,7 @@ type Props = {
   }[];
   isNavOpen: boolean;
   setIsNavOpen: (isNavOpen: boolean) => void;
-  coinData: TokenData | null
+  coinData: TokenDetail | null
 };
 
 export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
@@ -82,7 +82,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
               <p>Token Price</p>
               <div className="flex items-center gap-2 justify-center">
                 <div className="w-[8px] h-[8px] rounded-full bg-white" />
-                <p className="text-white text-sm font-bold">${coinData?.priceUsd}</p>
+                <p className="text-white text-sm font-bold">${coinData?.current_price?.usd}</p>
               </div>
             </div>
           </Link>

@@ -1,15 +1,14 @@
-import { TokenData } from '@/types/tokendata';
+import { TokenDetail } from '@/types/tokendata';
 import { useState, useEffect } from 'react';
 
 const useCoinData = () => {
-  const [coinData, setCoinData] = useState<TokenData | null>(null);
-
+  const [coinDetail, setCoinDetail] = useState<TokenDetail | null>(null);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await getCoinData();
-        console.log(data?.pairs[0]);
-        setCoinData(data?.pairs[0]);
+        const detail = await getCoinDetail();
+        console.log(detail?.market_data, detail?.symbol, detail?.name);
+        setCoinDetail({ current_price: detail?.market_data?.current_price, total_supply: detail?.market_data?.total_supply, symbol: detail?.symbol, name: detail?.name });
       } catch (error) {
         console.error('Error fetching coin data:', error);
       }
@@ -18,13 +17,13 @@ const useCoinData = () => {
     fetchData();
   }, []);
 
-  return coinData;
+  return coinDetail;
 };
 
-export default useCoinData;
-
-async function getCoinData() {
-  const res = await fetch("https://api.dexscreener.com/latest/dex/tokens/0x55A8f6c6b3Aa58ad6D1f26f6AFeDEd78F32E19f4");
+async function getCoinDetail() {
+  const res = await fetch("https://api.coingecko.com/api/v3/coins/aegis-ai");
   if (!res.ok) throw new Error(res.statusText)
   return res.json();
 }
+
+export default useCoinData;

@@ -4,8 +4,6 @@ import React, { useEffect, useState } from "react";
 import { NavBarFixed } from "./navbar-fixed";
 import { NavbarScroll } from "./navbar-scroll";
 import { AnimatePresence } from "framer-motion";
-import getCoinData from "@/utils/get-coin-data";
-import { TokenData } from "@/types/tokendata";
 import useCoinData from "@/utils/get-coin-data";
 
 type Props = {
@@ -39,7 +37,7 @@ const navEle = [
 
 export const NavbarSection = (props: Props) => {
   const [isScrolling, setIsScrolling] = useState(false);
-  const coinData = useCoinData();
+  const coinDetail = useCoinData();
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
@@ -56,7 +54,7 @@ export const NavbarSection = (props: Props) => {
         isScrolling ? (
         <NavbarScroll isScrolling={isScrolling} navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} />
         ) : (
-        <NavBarFixed coinData={coinData} navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} />)
+        <NavBarFixed coinData={coinDetail} navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} />)
       </AnimatePresence>
     </>
   );
