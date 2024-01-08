@@ -3,6 +3,7 @@ import React from "react";
 import { TokenomicsSection } from "..";
 import { ImageCard } from "./image-card";
 import { isViewportValid } from "@/utils/mediaQuery";
+import { Information } from "../flow";
 
 export const Demo = () => {
   const isMobile = isViewportValid(700);
@@ -54,12 +55,13 @@ export const Demo = () => {
             className="md:object-cover"
           />
         </div>
-        <div className="gap-2 flex overflow-x-scroll md:pl-10 mt-4 md:hidden">
+        <div className="gap-2 flex overflow-x-scroll md:pl-10 my-4 mb-8 md:hidden">
           {demoImages.map((demo, index) => (
             <ImageCard key={index} demo={demo} />
           ))}
         </div>
       </div>
+      <Information/>
       <TokenomicsSection />
     </div>
   );
