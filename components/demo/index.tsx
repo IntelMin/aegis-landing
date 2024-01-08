@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { TokenomicsSection } from "..";
+import { Information } from "../flow";
 
 export const Demo = () => {
   const demoImages = [
@@ -20,9 +21,9 @@ export const Demo = () => {
 
   return (
     <div id="demo" className="bg-circle mb-10">
-      <div className="w-full pt-[20px] flex bg">
-        <div className="flex-cols w-[40%]">
-          <div className="text-white text-start font-normal space-y-10 mt-4 pl-20 pr-10">
+      <div className="w-full pt-[20px] flex ">
+        <div className="flex-cols w-[40%] space-y-4 bg">
+          <div className="text-white text-start font-normal space-y-10 mt-4 pl-20 pr-10 ">
             <h1 className="text-6xl text-start text-[#27272A] font-semibold leading-[70px]">
               Aegis <br />
               <span className="text-white">dApp</span> demo
@@ -40,7 +41,7 @@ export const Demo = () => {
               delectus odio vitae, culpa quisquam!
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-2 pl-10 mt-4">
+          <div className="grid grid-cols-2 gap-2 pl-10 mt-4 px-40">
             {demoImages.map((demo, index) => (
               <div
                 key={index}
@@ -67,6 +68,7 @@ export const Demo = () => {
           />
         </div>
       </div>
+      <Information/>
       <TokenomicsSection />
     </div>
   );
