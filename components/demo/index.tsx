@@ -55,7 +55,7 @@ export const Demo = () => {
             className="md:object-cover"
           />
         </div>
-        <div className="gap-2 flex overflow-x-scroll md:pl-10 mt-4 md:hidden">
+        <div className="gap-2 flex overflow-x-scroll md:pl-10 my-4 mb-8 md:hidden">
           {demoImages.map((demo, index) => (
             <ImageCard key={index} demo={demo} />
           ))}

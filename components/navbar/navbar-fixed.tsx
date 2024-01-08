@@ -1,3 +1,4 @@
+import { TokenData } from "@/types/tokendata";
 import { isViewportValid } from "@/utils/mediaQuery";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,9 +11,10 @@ type Props = {
   }[];
   isNavOpen: boolean;
   setIsNavOpen: (isNavOpen: boolean) => void;
+  coinData: TokenData | null
 };
 
-export const NavBarFixed = ({ navEle, isNavOpen, setIsNavOpen }: Props) => {
+export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
   const isMobile = isViewportValid(700);
   return (
     <div className="absolute w-[100vw] top-0 left-0 flex items-center nav-container z-[100]">
@@ -80,7 +82,7 @@ export const NavBarFixed = ({ navEle, isNavOpen, setIsNavOpen }: Props) => {
               <p>Token Price</p>
               <div className="flex items-center gap-2 justify-center">
                 <div className="w-[8px] h-[8px] rounded-full bg-white" />
-                <p className="text-white text-sm font-bold">$0.63</p>
+                <p className="text-white text-sm font-bold">${coinData?.priceUsd}</p>
               </div>
             </div>
           </Link>
