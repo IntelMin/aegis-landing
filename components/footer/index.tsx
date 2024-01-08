@@ -5,8 +5,8 @@ import Image from "next/image";
 export const FooterSection = () => {
   const socialLinks = [
     { url: "https://instagram.com", label: "Instagram" },
-    { url: "https://twitter.com", label: "Twitter" },
-    { url: "https://tiktok.com", label: "TikTok" },
+    { url: "https://x.com/AegisAISecurity", label: "Twitter" },
+    { url: "https://t.me/AegisAISecurity", label: "Telegram" },
     { url: "https://linkedin.com", label: "LinkedIn" },
     { url: "https://youtube.com", label: "YouTube" },
   ];

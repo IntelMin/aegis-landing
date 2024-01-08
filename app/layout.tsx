@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -33,6 +34,7 @@ const satoshi = localFont({
   ],
 });
 
+
 export const metadata: Metadata = {
   title: "Aegis AI",
   description: "Audit your code for security vulnerabilities",
@@ -43,6 +45,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
       <body className={`${satoshi.className} bg-black`}>
