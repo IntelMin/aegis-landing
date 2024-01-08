@@ -24,10 +24,10 @@ export default function Home() {
       <AboutSection />
       <PillarsSection />
       <ExploreSection />
+      <Partners />
       {/* 
       <Demo />
       <Roadmap />
-      <Partners />
       <FAQSection />
       <FooterSection /> 
       */}
