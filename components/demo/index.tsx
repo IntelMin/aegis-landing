@@ -3,6 +3,7 @@ import React from "react";
 import { TokenomicsSection } from "..";
 import { ImageCard } from "./image-card";
 import { isViewportValid } from "@/utils/mediaQuery";
+import { Information } from "../flow";
 
 export const Demo = () => {
   const isMobile = isViewportValid(700);
@@ -60,6 +61,7 @@ export const Demo = () => {
           ))}
         </div>
       </div>
+      <Information/>
       <TokenomicsSection />
     </div>
   );
