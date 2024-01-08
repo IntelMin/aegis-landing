@@ -40,7 +40,7 @@ export const NavbarScroll = ({
       ))}
       <Link
         href="/"
-        className="text-sm text-neutral-100 bg-black rounded-full cursor-pointer py-3 px-6"
+        className="text-sm text-neutral-100 bg-black rounded-full cursor-pointer py-3 md:px-6 px-3  text-center max-md:min-w-[120px]"
       >
         Open dApp
       </Link>
