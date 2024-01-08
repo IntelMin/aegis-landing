@@ -44,7 +44,7 @@ export const NavbarScroll = ({
       >
         Open dApp
       </Link>
-      <button type="button" onClick={() => setIsNavOpen(!isNavOpen)} className="max-md:hidden">
+      <button type="button" onClick={() => setIsNavOpen(!isNavOpen)} className="md:hidden">
         <Image
           alt="burger-icon"
           src={isNavOpen ? "/close.svg" : "/burger-icon.png"}

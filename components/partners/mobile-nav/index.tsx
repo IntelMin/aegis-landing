@@ -1,3 +1,4 @@
+import useCoinData from "@/utils/get-coin-data";
 import Link from "next/link";
 import React from "react";
 
@@ -7,6 +8,7 @@ type Props = {
 };
 
 export const MobileNav = ({ setIsNavOpen }: Props) => {
+  const coinDetail = useCoinData();
   const navArr = [
     {
       name: "About",
@@ -49,7 +51,7 @@ export const MobileNav = ({ setIsNavOpen }: Props) => {
             </p>
             <div className="flex items-center gap-2">
               <div className="w-[12px] h-[12px] rounded-full bg-white " />
-              <p className="text-white text-[24px] font-[700]">$0.63</p>
+              <p className="text-white text-[24px] font-[700]">${coinDetail?.current_price?.usd}</p>
             </div>
           </div>
         </div>
