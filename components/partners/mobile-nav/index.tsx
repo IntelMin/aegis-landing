@@ -12,23 +12,23 @@ export const MobileNav = ({ setIsNavOpen }: Props) => {
   const navArr = [
     {
       name: "About",
-      link: "#",
+      link: "#about",
     },
     {
       name: "Roadmap",
-      link: "#",
+      link: "#roadmap",
     },
     {
       name: "Tokenomics",
-      link: "#",
+      link: "#demo",
     },
     {
       name: "Whitepaper",
-      link: "#",
+      link: "#demo",
     },
     {
       name: "FAQ",
-      link: "#",
+      link: "#faq",
     },
   ];
   return (

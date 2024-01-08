@@ -7,7 +7,7 @@ type Props = {};
 export const PillarsSection = (props: Props) => {
   const isMobile = isViewportValid(700);
   return (
-    <div className="bg flex flex-col gap-16 w-full px-4 md:px-16 p-[70px] mt-[60px]">
+    <div className="bg flex flex-col gap-16 w-full px-4 md:px-16 p-[70px] mt-[10px]" id="features">
       <div className="flex flex-col gap-0 md:gap-3 max-md:items-center">
         <h1 className="text-[#3F3F46] text-[40px] md:text-[64px] font-[600] md:leading-[80px]">
           Discover Our

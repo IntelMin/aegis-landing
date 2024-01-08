@@ -22,7 +22,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
         <div>
           <Link
             className={`text-[#FFFFFF] md:text-[#FFFFFF80] transition-all ease-in duration-150 text-[16px] text-center w-full`}
-            href="link"
+            href={isMobile ? "#home" : "#about"}
           >
             {isMobile ? "Home" : "About"}
           </Link>
@@ -31,7 +31,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       <div className="w-[14.5%] flex items-center justify-center nav-ele-bg max-md:hidden ">
         <Link
           className="translate-x-4 text-[#FFFFFF80] text-[16px] text-center w-full"
-          href="link"
+          href="#roadmap"
         >
           Roadmap
         </Link>
@@ -39,7 +39,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       <div className="w-[17.5%] flex items-center justify-center nav-ele-bg max-md:hidden ">
         <Link
           className="text-[#FFFFFF80] text-[16px] text-center w-full"
-          href="link"
+          href="#demo"
         >
           Tokenomics
         </Link>
@@ -47,7 +47,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       <div className="w-[34%] md:w-[16%] flex items-center justify-center nav-ele-bg relative">
         <Link
           className="text-[#FFFFFF80] flex items-center justify-center z-[2]"
-          href="link"
+          href="#home"
         >
           <div className="logo-bg relative z-[3] w-[100px] flex items-center justify-center logo-bg">
             <Image src="/logo.png" alt="logo" width={70} height={70} />
@@ -59,7 +59,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       <div className="w-[17.5%] flex items-center justify-center nav-ele-bg max-md:hidden ">
         <Link
           className="text-[#FFFFFF80] text-[16px] text-center w-full"
-          href="link"
+          href="#demo"
         >
           Whitepaper
         </Link>
@@ -67,7 +67,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       <div className="w-[12.5%] flex items-center justify-center nav-ele-bg max-md:hidden">
         <Link
           className="text-[#FFFFFF80] text-[16px] text-center w-full"
-          href="link"
+          href="#faq"
         >
           FAQ
         </Link>

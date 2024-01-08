@@ -18,7 +18,7 @@ export const FAQSection: React.FC = () => {
   const isMobile = isViewportValid(700);
   return (
     <MotionConfig transition={{ duration: 0.5 }}>
-      <div className="flex flex-col items-center justify-center w-full min-h-screen pt-[100px] gap-8 text px-3 md:px-16 py-16">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen pt-[100px] gap-8 text px-3 md:px-16 py-16" id="faq">
         <div className="flex flex-col text-[#3F3F46] text-[40px] md:text-6xl font-normal items-center justify-center item-center text-center w-full space-y-4 mb-4">
           <h1
             className={`${

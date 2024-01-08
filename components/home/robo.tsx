@@ -17,14 +17,18 @@ type Props = {
 export const Robo = (props: Props) => {
   const mesh = useRef<THREE.Mesh | null>(null);
   const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+  dracoLoader.setDecoderPath("https://www.gstatic.com/draco/v1/decoders/");
   const gltf = useLoader(GLTFLoader, "./images/robot.glb", (loader) => {
     loader.setDRACOLoader(dracoLoader);
   });
-  gltf.scene.rotation.y = -Math.PI / 2; 
-
+  gltf.scene.rotation.y = -Math.PI / 2;
+  const roboPosition = { x: -300, y: 0, z: 0 };
   // const gltf = useLoader(GLTFLoader, "./images/robo.glb");
-  const [dummy] = useState(() => new THREE.Object3D());
+  const [dummy] = useState(() => {
+    const dummyObject = new THREE.Object3D();
+    dummyObject.position.set(roboPosition.x, roboPosition.y, roboPosition.z);
+    return dummyObject;
+  });
   useFrame((state, dt) => {
     dummy.position.set(
       mesh.current?.position.x || 0,
