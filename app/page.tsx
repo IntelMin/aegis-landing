@@ -31,8 +31,6 @@ export default function Home() {
       <Demo />
       <Roadmap />
       <Partners />
-      <Roadmap />
-      <Partners />
       <FAQSection /> 
       <FooterSection /> 
     </main>
