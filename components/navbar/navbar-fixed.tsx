@@ -1,3 +1,4 @@
+import { TokenDetail } from "@/types/tokendata";
 import { isViewportValid } from "@/utils/mediaQuery";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,16 +9,19 @@ type Props = {
     name: string;
     url: string;
   }[];
+  isNavOpen: boolean;
+  setIsNavOpen: (isNavOpen: boolean) => void;
+  coinData: TokenDetail | null
 };
 
-export const NavBarFixed = ({ navEle }: Props) => {
+export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
   const isMobile = isViewportValid(700);
   return (
     <div className="absolute w-[100vw] top-0 left-0 flex items-center nav-container z-[100]">
       <div className="w-[33%] md:w-[10%] flex items-center justify-center nav-ele-bg">
         <div>
           <Link
-            className="text-[#FFFFFF80] hover:scale-[2.1] transition-all ease-in duration-150 text-[16px] text-center w-full"
+            className={`text-[#FFFFFF] md:text-[#FFFFFF80] transition-all ease-in duration-150 text-[16px] text-center w-full`}
             href="link"
           >
             {isMobile ? "Home" : "About"}
@@ -78,13 +82,13 @@ export const NavBarFixed = ({ navEle }: Props) => {
               <p>Token Price</p>
               <div className="flex items-center gap-2 justify-center">
                 <div className="w-[8px] h-[8px] rounded-full bg-white" />
-                <p className="text-white text-sm font-bold">$0.63</p>
+                <p className="text-white text-sm font-bold">${coinData?.current_price?.usd}</p>
               </div>
             </div>
           </Link>
         ) : (
-          <button>
-            <Image alt="burger-icon" src="/burger-icon.png" width={40} height={40} />
+          <button type="button" onClick={() => setIsNavOpen(!isNavOpen)}>
+            <Image alt="burger-icon" src={isNavOpen ? "/close.svg" : "/burger-icon.png"} width={40} height={40} />
           </button>
         )}
       </div>

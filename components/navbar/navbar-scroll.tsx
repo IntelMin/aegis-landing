@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { NavAnimations } from "./animation-var";
+import Image from "next/image";
 
 type Props = {
   isScrolling: boolean;
@@ -9,9 +10,16 @@ type Props = {
     name: string;
     url: string;
   }[];
+  isNavOpen: boolean;
+  setIsNavOpen: (isNavOpen: boolean) => void;
 };
 
-export const NavbarScroll = ({ isScrolling, navEle }: Props) => {
+export const NavbarScroll = ({
+  isScrolling,
+  navEle,
+  isNavOpen,
+  setIsNavOpen,
+}: Props) => {
   return (
     <motion.div
       key={1}
@@ -36,6 +44,14 @@ export const NavbarScroll = ({ isScrolling, navEle }: Props) => {
       >
         Open dApp
       </Link>
+      <button type="button" onClick={() => setIsNavOpen(!isNavOpen)} className="md:hidden">
+        <Image
+          alt="burger-icon"
+          src={isNavOpen ? "/close.svg" : "/burger-icon.png"}
+          width={40}
+          height={40}
+        />
+      </button>
     </motion.div>
   );
 };

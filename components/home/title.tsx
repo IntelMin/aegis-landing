@@ -63,7 +63,7 @@ export const Title = (props: Props) => {
                     redefining the Blockchain landscape with{" "}
                     <span className="text-white font-[500]">AI powered</span>{" "}
                     tools. We are committed to security, transparency and
-                    privacy for the good of the ecosystem. (paragraph)
+                    privacy for the good of the ecosystem.
                   </p>
                 </div>
               </div>

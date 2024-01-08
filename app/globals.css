@@ -58,6 +58,9 @@ html {
   background-size: cover;
 }
 
+.bg-nav {
+  background-image: url("../assets/nav-bg.png");
+}
 .bg-pink-noise {
   background-image: url("../assets/pink-noise.png");
 }
