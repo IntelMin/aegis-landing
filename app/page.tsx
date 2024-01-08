@@ -19,16 +19,18 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-black relative">
       {/* // TODO - Add your content here */}
       {/* <EntranceGate /> */}
-      {/* <NavbarSection /> */}
+      <NavbarSection />
       <HomeSection />
-      {/* <AboutSection />
+      <AboutSection />
+      {/* 
       <PillarsSection />
       <ExploreSection />
       <Demo />
       <Roadmap />
       <Partners />
       <FAQSection />
-      <FooterSection /> */}
+      <FooterSection /> 
+      */}
     </main>
   );
 }

@@ -19,13 +19,13 @@ export const NavbarScroll = ({ isScrolling, navEle }: Props) => {
       animate={isScrolling ? "animate" : "initial"}
       exit="exit"
       variants={NavAnimations}
-      className="fixed left-1/2 z-[999] -translate-x-1/2 flex items-center gap-8 top-4 w-fit bg-[#ffffff14] border border-[#ffffff14] pl-6 pr-2 py-2 rounded-full backdrop-blur-lg"
+      className="fixed left-1/2 z-[999] -translate-x-1/2 flex items-center gap-8 top-4 w-fit bg-[#ffffff14] border border-[#ffffff14] pl-2 md:pl-6 pr-2 py-2 rounded-full backdrop-blur-lg"
     >
       {navEle?.map((ele) => (
         <Link
           key={ele.name}
           href={ele.url}
-          className={`text-lg text-neutral-400`}
+          className={`text-lg text-neutral-400 max-md:hidden`}
         >
           {ele.name}
         </Link>
