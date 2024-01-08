@@ -17,8 +17,8 @@ type Props = {
 export const Robo = (props: Props) => {
   const mesh = useRef<THREE.Mesh | null>(null);
   const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath("/draco-decoders/");
-  const gltf = useLoader(GLTFLoader, "./images/loginavatar.glb", (loader) => {
+  dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+  const gltf = useLoader(GLTFLoader, "./images/robot.glb", (loader) => {
     loader.setDRACOLoader(dracoLoader);
   });
 
