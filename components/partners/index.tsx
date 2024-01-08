@@ -21,22 +21,22 @@ export const Partners = () => {
     {
       name: "ChartAI",
       url: "https://www.binance.com/en/images/logo.svg",
-      logo: "/Partners/image 17-1.png",
+      logo: "/Partners/image 16.png",//17.1
     },
     {
       name: "VaultTech",
       url: "https://www.binance.com/en/images/url.svg",
-      logo: "/Partners/image 17-2.png",
+      logo: "/Partners/image 17-1.png",
     },
     {
       name: "Sentiment AI",
       url: "https://www.binance.com/en/images/logo.svg",
-      logo: "/Partners/image 17-3.png",
+      logo: "/Partners/image 17-2.png",
     },
     {
       name: "AIgentX",
       url: "https://www.binance.com/en/images/logo.svg",
-      logo: "/Partners/image 16.png",
+      logo: "/Partners/image 17-3.png",
     },
   ];
   return (
@@ -48,14 +48,14 @@ export const Partners = () => {
             "linear-gradient(#000000ad 1.67%, rgba(17, 17, 17, 0) 18.08%)",
         }}
       />
-      <h1 className="text-6xl text-center text-white font-black mt-4">
+      <h1 className="text-[40px] md:text-6xl text-center text-white font-black mt-4">
         Partners
       </h1>
-      <div className="flex justify-center items-center space-x-[64px] py-8 border-1 border-t-[1px] border-b-[1px] border-[#27272A] mx-20">
+      <div className="grid max-md:grid-cols-6 md:grid-cols-7 items-center max-md:w-full gap-8 md:gap-4 py-8 border-t-[1px] border-b-[1px] border-[#27272A] px-3 md:px-20">
         {partners.map((partner, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center space-y-4"
+            className={`${ index === partners.length - 1 ? "max-md:col-span-6" : "max-md:col-span-3"} col-span-1 flex flex-col items-center justify-center space-y-4`}
           >
             <Image
               src={partner.logo}
@@ -78,7 +78,7 @@ export const Partners = () => {
                   fill="white"
                 />
               </svg>{" "}
-              <h1 className="text-xl text-[#71717A] font-medium hover:text-white ">
+              <h1 className="text-lg text-[#71717A] font-medium hover:text-white ">
                 {partner.name}
               </h1>
             </div>
