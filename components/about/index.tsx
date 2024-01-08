@@ -7,9 +7,9 @@ export const AboutSection = (props: Props) => {
   return (
     <div
       id="about"
-      className="bg flex max-md:flex-col gap-4 md:gap-20 items-center w-full min-h-screen px-4 md:pl-16 md:pr-[160px] md:py-[100px]"
+      className="bg flex max-md:flex-col gap-4 md:gap-16 max-md:items-center w-full min-h-screen px-4 md:pl-16 md:pr-[160px] md:py-[100px]"
     >
-      <div className="flex flex-col items-center gap-16">
+      <div className="flex flex-col items-center md:w-[40%] gap-16">
         <div className="flex md:flex-col gap-3 max-md:text-center md:gap-6">
           <h1 className="text-[#3F3F46] text-[40px] md:text-8xl font-[600]">
             About
@@ -26,7 +26,7 @@ export const AboutSection = (props: Props) => {
           height={300}
         />
       </div>
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 md:w-[60%]">
         <div className="flex gap-1">
           <h1 className="text-white text-[40px] max-md:leading-[90px] md:text-[56px] font-medium">
             A

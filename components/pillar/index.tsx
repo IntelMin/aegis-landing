@@ -17,7 +17,7 @@ export const PillarsSection = (props: Props) => {
         </h2>
       </div>
       {/* Cards Section */}
-      <div className="flex md:grid md:grid-cols-3 gap-8 w-full overflow-x-scroll">
+      <div className="max-md:flex grid grid-cols-3 gap-8 w-full overflow-x-scroll md:pt-[128px] md:translate-y-[-128px]">
         <Card
           title="Decentralized Trust"
           description="Aegis is founded on the principles of decentralization, trust is dispersed throughout our network. We create a transparent, flexible, and resilient trust architecture by utilizing cutting-edge technologies and AI."
