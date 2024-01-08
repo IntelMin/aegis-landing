@@ -1,7 +1,8 @@
 import React from "react";
-import { isMobile } from 'react-device-detect';
+import { isViewportValid } from "@/utils/mediaQuery";
 
 export const Roadmap = () => {
+  const isMobile = isViewportValid(700);
   return (
     <div
       id="home"
