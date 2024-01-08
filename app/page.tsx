@@ -2,13 +2,13 @@
 
 import {
   AboutSection,
+  EntranceGate,
   ExploreSection,
   FAQSection,
   FooterSection,
   HomeSection,
   NavbarSection,
   PillarsSection,
-  TokenomicsSection,
 } from "@/components";
 import Demo from "@/components/demo";
 import Partners from "@/components/partners";
@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-black relative">
       {/* // TODO - Add your content here */}
+      {/* <EntranceGate /> */}
       <NavbarSection />
       <HomeSection />
       <AboutSection />
