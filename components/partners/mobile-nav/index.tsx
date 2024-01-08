@@ -40,13 +40,13 @@ export const MobileNav = ({ setIsNavOpen }: Props) => {
               key={index}
               href={nav.link}
               onClick={() => setIsNavOpen(false)}
-              className={`text-[#FFFFFF80] hover:text-white text-[30px] font-[700]`}
+              className={`text-[#FFFFFF80] hover:text-white text-[26px] font-[700]`}
             >
               {nav.name}
             </Link>
           ))}
           <div className="flex items-center gap-12">
-            <p className="text-[#FFFFFF80] hover:text-white text-[30px] font-[700]">
+            <p className="text-[#FFFFFF80] hover:text-white text-[26px] font-[700]">
               Token Price
             </p>
             <div className="flex items-center gap-2">
