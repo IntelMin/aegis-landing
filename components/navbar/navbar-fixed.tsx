@@ -8,16 +8,18 @@ type Props = {
     name: string;
     url: string;
   }[];
+  isNavOpen: boolean;
+  setIsNavOpen: (isNavOpen: boolean) => void;
 };
 
-export const NavBarFixed = ({ navEle }: Props) => {
+export const NavBarFixed = ({ navEle, isNavOpen, setIsNavOpen }: Props) => {
   const isMobile = isViewportValid(700);
   return (
     <div className="absolute w-[100vw] top-0 left-0 flex items-center nav-container z-[100]">
       <div className="w-[33%] md:w-[10%] flex items-center justify-center nav-ele-bg">
         <div>
           <Link
-            className="text-[#FFFFFF80] hover:scale-[2.1] transition-all ease-in duration-150 text-[16px] text-center w-full"
+            className={`text-[#FFFFFF] md:text-[#FFFFFF80] transition-all ease-in duration-150 text-[16px] text-center w-full`}
             href="link"
           >
             {isMobile ? "Home" : "About"}
@@ -83,8 +85,8 @@ export const NavBarFixed = ({ navEle }: Props) => {
             </div>
           </Link>
         ) : (
-          <button>
-            <Image alt="burger-icon" src="/burger-icon.png" width={40} height={40} />
+          <button type="button" onClick={() => setIsNavOpen(!isNavOpen)}>
+            <Image alt="burger-icon" src={isNavOpen ? "/close.svg" : "/burger-icon.png"} width={40} height={40} />
           </button>
         )}
       </div>
