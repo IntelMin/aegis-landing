@@ -17,10 +17,11 @@ type Props = {
 export const Robo = (props: Props) => {
   const mesh = useRef<THREE.Mesh | null>(null);
   const dracoLoader = new DRACOLoader();
-  dracoLoader.setDecoderPath("/draco-decoders/");
-  const gltf = useLoader(GLTFLoader, "./images/loginavatar.glb", (loader) => {
+  dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/');
+  const gltf = useLoader(GLTFLoader, "./images/robot.glb", (loader) => {
     loader.setDRACOLoader(dracoLoader);
   });
+  gltf.scene.rotation.y = -Math.PI / 2; 
 
   // const gltf = useLoader(GLTFLoader, "./images/robo.glb");
   const [dummy] = useState(() => new THREE.Object3D());
@@ -38,7 +39,7 @@ export const Robo = (props: Props) => {
     }
   });
   return (
-    <mesh ref={mesh} scale={[1.5, 1.5, 1.5]} {...props}>
+    <mesh ref={mesh} scale={[1.8, 1.8, 1.8]} {...props}>
       <primitive object={gltf.scene} />
     </mesh>
   );
