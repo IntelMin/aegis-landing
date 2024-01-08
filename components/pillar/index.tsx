@@ -10,7 +10,7 @@ export const PillarsSection = (props: Props) => {
     <div className="bg flex flex-col gap-16 w-full px-4 md:px-16 p-[70px] mt-[60px]">
       <div className="flex flex-col gap-0 md:gap-3 max-md:items-center">
         <h1 className="text-[#3F3F46] text-[40px] md:text-[64px] font-[600] md:leading-[80px]">
-          Discover Out
+          Discover Our
         </h1>
         <h2 className="text-[#FFFFFF] text-[40px] md:text-[64px] font-[700] md:leading-[80px]">
           Core Pillars

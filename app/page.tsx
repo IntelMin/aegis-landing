@@ -24,7 +24,7 @@ export default function Home() {
       <AboutSection />
       <PillarsSection />
       <ExploreSection />
-      {/* <Demo /> */}
+      <Demo />
       <Partners />
       {/* <Roadmap /> */}
       <FAQSection /> 
