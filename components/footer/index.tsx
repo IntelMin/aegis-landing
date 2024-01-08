@@ -55,10 +55,10 @@ export const FooterSection = () => {
               />
             ))}
             <Link href=" https://mirror.xyz/0x94136f5C29ee13BD2804eb82EB4cF531c2055a64">
-              <FaRegNewspaper className="text-white text-[26px]" />
+              <FaRegNewspaper className="text-white text-[26px] md:min-w-[40px]" />
             </Link>
             <Link href="https://t.me/AegisAiSecurity">
-              <FaTelegramPlane className="text-white text-[26px]" />
+              <FaTelegramPlane className="text-white text-[26px] md:ml-4" />
             </Link>
           </div>
           <hr className="w-full border-t border-[#FFFFFF1A] py-4" />
