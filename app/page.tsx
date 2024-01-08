@@ -22,9 +22,9 @@ export default function Home() {
       <NavbarSection />
       <HomeSection />
       <AboutSection />
-      {/* 
       <PillarsSection />
       <ExploreSection />
+      {/* 
       <Demo />
       <Roadmap />
       <Partners />

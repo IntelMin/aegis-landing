@@ -56,7 +56,7 @@ export const Title = (props: Props) => {
                 height={60}
                 className="z-[6] relative  max-md:rotate-90 max-md:w-[90px]"
               />
-              <div className="absolute bottom-full left-0 md:left-full h-full w-[320px] md:w-[600px] z-[1] -translate-x-[130px] md:-translate-x-6 translate-y-[90px] md:translate-y-3">
+              <div className="absolute bottom-full left-0 md:left-full h-full w-[350px] md:w-[600px] z-[1] -translate-x-[150px] md:-translate-x-6 translate-y-[120px] md:translate-y-3">
                 <div className="py-2 md:py-4 px-4 md:px-6 bg-[#18181B] rounded-lg desc-con text-left">
                   <p className="text-[16px] md:text-[20px] text-[#71717A] font-[300] leading-[24px] md:leading-[32px]">
                     <span className="text-white font-[500]">Aegis</span> is
@@ -71,10 +71,10 @@ export const Title = (props: Props) => {
           </div>
         </div>
       </div>
-      <div className="flex items-center max-md:justify-between gap-5 max-md:mt-[200px] z-[10]">
+      <div className="flex items-center max-md:justify-between md:gap-5 max-md:mt-[200px] max-md:px-3 z-[10]">
         <Link
           href="#"
-          className="z-[10] text-white hover:text-black text-lg font-[400] px-8 md:px-12 py-3 md:py-[18px] rounded-[40px] md:rounded-full bg-gradient-to-br from-[black] via-[#2b2b2b] to-[black]  hover:from-[white] hover:via-[white] hover:to-[white] transition-all ease-in duration-350"
+          className="z-[10] text-white hover:text-black text-lg font-[400] px-4 md:px-12 py-3 md:py-[18px] rounded-[40px] md:rounded-full bg-gradient-to-br from-[black] via-[#2b2b2b] to-[black]  hover:from-[white] hover:via-[white] hover:to-[white] transition-all ease-in duration-350"
         >
           Buy $AEGIS Token
         </Link>

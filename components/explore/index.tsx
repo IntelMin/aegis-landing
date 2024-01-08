@@ -3,13 +3,15 @@
 import React from "react";
 import { DetailCard } from "./detail-card";
 import Tilt from "react-parallax-tilt";
+import { isViewportValid } from "@/utils/mediaQuery";
 
 type Props = {};
 
 export const ExploreSection = (props: Props) => {
+  const isMobile = isViewportValid(700);
   return (
     <div className="bg-circumcircle flex flex-col gap-20 w-full min-h-screen ">
-      <div className="relative px-16 py-[100px] w-full h-full">
+      <div className="relative px-3 md:px-16 py-[100px] w-full h-full">
         <div
           className="absolute top-0 left-0 w-full h-full -translate-y-6"
           style={{
@@ -18,12 +20,12 @@ export const ExploreSection = (props: Props) => {
           }}
         />
         <div className="w-full h-full flex-col gap-3 items-center flex justify-center">
-          <h1 className="text-[64px] text-[#3F3F46] font-[500]">
+          <h1 className="text-[40px] max-md:flex max-md:flex-col max-md:items-center md:text-[64px] text-[#3F3F46] font-[500]">
             Explore Our <span className="text-white font-[500]">Solutions</span>
           </h1>
           <p className="text-[20px] font-[400] leading-[32px] text-[#71717A] text-center">
             <span className="text-white">Aegis</span> Security Ecosystem has a
-            combination of tools to help you <br />
+            combination of tools to help you {!isMobile && <br />}
             navigate your journey in Web3 in the most secure way:
           </p>
           <div className="w-full overflow-y-scroll py-10 px-4 flex items-center gap-8 z-[20]">
