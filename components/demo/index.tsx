@@ -32,11 +32,10 @@ export const Demo = () => {
               <span className="text-white">dApp</span> demo
             </h1>
             <p className="text-[#71717A] line-break max-md:text-center">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-              tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-              consequat. Duis
+              Below are images provided to showcase our Aegis Ai dApp. This will
+              be at the core of what we offer and become the security hub that
+              the blockchain needs in order to thrive and bring forward
+              adoption.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-2 pl-10 mt-4 max-md:hidden">
@@ -61,7 +60,7 @@ export const Demo = () => {
           ))}
         </div>
       </div>
-      <Information/>
+      <Information />
       <TokenomicsSection />
     </div>
   );

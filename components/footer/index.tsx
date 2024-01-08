@@ -64,7 +64,7 @@ export const FooterSection = () => {
           <hr className="w-full border-t border-[#FFFFFF1A] py-4" />
           <div className="flex max-md:flex-col max-md:gap-4 justify-between items-center w-full">
             <div className="text-xs max-md:flex max-md:gap-8 max-md:justify-center max-md:w-full">
-              <span>Example@example.com</span>
+              <span>info@aiaegis.org</span>
               <span className="mx-2 max-md:text-[#FFFFFF1A]">|</span>
               <span>World wide</span>
             </div>
