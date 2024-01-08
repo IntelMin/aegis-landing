@@ -25,8 +25,8 @@ export default function Home() {
       <PillarsSection />
       <ExploreSection />
       <Demo />
+      <Roadmap />
       <Partners />
-      {/* <Roadmap /> */}
       <FAQSection /> 
       <FooterSection /> 
     </main>
