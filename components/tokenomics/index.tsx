@@ -37,7 +37,7 @@ export const TokenomicsSection = () => {
         </div>
         <div className="flex flex-col gap-5">
           <div
-            className="w-[180px] md:w-[200px] h-[200px] md:h-[320px] bg-[#18181B] rounded-md -translate-x-[35px] md:-translate-x-[60px] flex items-end p-4 justify-start flex-col"
+            className="w-[180px] md:w-[290px] h-[200px] md:h-[320px] bg-[#18181B] rounded-md -translate-x-[35px] md:-translate-x-[60px] flex items-end p-4 justify-start flex-col"
             style={{
               clipPath: "polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 77.5%)",
             }}
