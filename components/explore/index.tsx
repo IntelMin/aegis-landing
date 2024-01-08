@@ -33,7 +33,7 @@ export const ExploreSection = (props: Props) => {
     setIsDragging(false);
   };
   return (
-    <div className="bg-circumcircle flex flex-col gap-20 w-full min-h-screen ">
+    <div className="bg-circumcircle flex flex-col gap-20 w-full">
       <div className="relative px-3 md:px-16 py-[100px] w-full h-full">
         <div
           className="absolute top-0 left-0 w-full h-full -translate-y-6"

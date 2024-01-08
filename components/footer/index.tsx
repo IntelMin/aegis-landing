@@ -1,14 +1,15 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import Image from "next/image";
+import { FaRegNewspaper } from "react-icons/fa6";
+import { FaTelegramPlane } from "react-icons/fa";
+import Link from "next/link";
 
 export const FooterSection = () => {
   const socialLinks = [
-    { url: "https://instagram.com", label: "Instagram" },
+    { url: "https://github.com/aiaegis", label: "Github" },
     { url: "https://x.com/AegisAISecurity", label: "Twitter" },
-    { url: "https://t.me/AegisAISecurity", label: "Telegram" },
-    { url: "https://linkedin.com", label: "LinkedIn" },
-    { url: "https://youtube.com", label: "YouTube" },
+    { url: "https://www.youtube.com/@aegisaisecurity", label: "YouTube" },
   ];
 
   return (
@@ -43,7 +44,7 @@ export const FooterSection = () => {
               CONTACT US
             </a>
           </nav>
-          <div className="flex justify-between w-full md:justify-center gap-4 mb-4  ">
+          <div className="flex justify-between items-center w-full md:justify-center gap-4 mb-4  ">
             {socialLinks.map((social, index) => (
               <SocialIcon
                 key={index}
@@ -53,6 +54,12 @@ export const FooterSection = () => {
                 bgColor="transparent"
               />
             ))}
+            <Link href=" https://mirror.xyz/0x94136f5C29ee13BD2804eb82EB4cF531c2055a64">
+              <FaRegNewspaper className="text-white text-[26px]" />
+            </Link>
+            <Link href="https://t.me/AegisAiSecurity">
+              <FaTelegramPlane className="text-white text-[26px]" />
+            </Link>
           </div>
           <hr className="w-full border-t border-[#FFFFFF1A] py-4" />
           <div className="flex max-md:flex-col max-md:gap-4 justify-between items-center w-full">

@@ -15,7 +15,7 @@ export const ImageCard = ({ demo }: Props) => {
         alt="demo"
         width={212}
         height={152}
-        className="object-cover max-md:min-w-[180px]"
+        className="object-cover max-md:min-w-[180px] w-[80%]"
       />
     </div>
   );
