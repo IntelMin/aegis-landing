@@ -11,7 +11,7 @@ export const Card = ({ title, description, image, translate }: Props) => {
     const words = description.split(" ");
   return (
     <div
-      className={`col-span-1 w-[380px] max-w-[380px] flex flex-col justify-between border-2 border-[#27272A] rounded relative card-clip ${translate}`}
+      className={`md:col-span-1 w-[380px] min-w-[380px] max-w-[380px] flex flex-col justify-between border-2 border-[#27272A] rounded relative card-clip ${translate}`}
     >
       <div className="w-[100px] h-[150px] bg-[#27272A] absolute -top-[58px] left-[88.4%] rotate-[-42deg]" />
       <div

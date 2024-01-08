@@ -5,7 +5,10 @@ import { NavBarFixed } from "./navbar-fixed";
 import { NavbarScroll } from "./navbar-scroll";
 import { AnimatePresence } from "framer-motion";
 
-type Props = {};
+type Props = {
+  isNavOpen: boolean;
+  setIsNavOpen: (isNavOpen: boolean) => void;
+};
 
 const navEle = [
   {
@@ -47,9 +50,9 @@ export const NavbarSection = (props: Props) => {
     <>
       <AnimatePresence>
         isScrolling ? (
-        <NavbarScroll isScrolling={isScrolling} navEle={navEle} />
+        <NavbarScroll isScrolling={isScrolling} navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} />
         ) : (
-        <NavBarFixed navEle={navEle} />)
+        <NavBarFixed navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} />)
       </AnimatePresence>
     </>
   );

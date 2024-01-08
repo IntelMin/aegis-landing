@@ -32,12 +32,12 @@ export const HomeSection = (props: Props) => {
           alt="linear"
           width={500}
           height={300}
-          className="absolute bottom-0 left-0 w-full h-[100px] z-[11]"
+          className="max-md:hidden absolute bottom-0 left-0 w-full h-[100px] z-[11]"
         />
-        <div className="py-12 px-16 z-[10] relative">
+        <div className="py-12 px-3 md:px-16 z-[10] relative">
           <Title mousePosition={mousePosition} />
         </div>
-        <div className="absolute bottom-0 right-0 w-[70%] h-[70%] overflow-hidden shadow-md shadow-black">
+        <div className="max-md:hidden absolute bottom-0 right-0 w-[70%] h-[70%] overflow-hidden shadow-md shadow-black">
           <video autoPlay loop muted className="w-full h-full object-cover">
             <source src="/factory.mkv" type="video/mp4" />
             Your browser does not support the video tag.
