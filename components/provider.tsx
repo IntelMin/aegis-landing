@@ -18,17 +18,20 @@ const Provider = ({ children }: { children: React.ReactNode }) => {
   }, []);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, isMobile ? 0 : 12500));
-
+  React.useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
       setIsLoading(false);
-    };
-
-    fetchData();
+    }, 12720);
   }, []);
 
-  return isLoading ? <Preloader /> : <div>{children}</div>;
+  return isMobile ? (
+    <div>{children}</div>
+  ) : isLoading ? (
+    <Preloader />
+  ) : (
+    <div>{children}</div>
+  );
 };
 
 export { Provider };
