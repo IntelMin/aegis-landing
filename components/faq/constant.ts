@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: "What is the Aegis Security Ecosystem about?",
     answer:
-      "Aegis Security Ecosystem is dedicated to revolutionizing security norms in the current decentralization era. In order to strengthen the whole blockchain ecosystem, we are committed to providing all-round security solutions to help traders and builders thrive. Our tools range from AI security tools to Telegram monitoring bots, on-chain and off-chain investigation tools, and security hardwares solutions.",
+      "Aegis Security Ecosystem is dedicated to revolutionizing security norms in the current decentralization era. In order to strengthen the whole blockchain ecosystem, we are committed to providing all-round security solutions to help traders and builders thrive. ",
   },
   {
     question: "How does Aegis Enhance Security of Smart Contracts?",
@@ -10,28 +10,28 @@ export const faqs = [
       "Aegis Dapp offers cutting-edge tools like AI built Code Auditor and Token/Smart Contract Auditor. To drastically reduce vulnerabilities and strengthen decentralized applications, we make use of cutting-edge technology, bug bounty programs for community-driven security, and decentralized AI for stringent audits.",
   },
   {
-    question: "What is the Aegis Browser Extension about?",
+    question: "What kind of smart contracts can be audited using Aegis AI?",
     answer:
-      "An effective method for safeguarding wallets from phishing, frauds, and harmful websites is the Aegis Browser Extension. It serves as a watchful guardian, guaranteeing safe surfing experiences and defending users against any dangers in the decentralized environment, by offering real-time protection.",
+      "Aegis AI can be used to audit smart contracts written in various programming languages commonly used for blockchain development, including Solidity.",
   },
   {
-    question: "How does Aegis contribute to secure trading?",
+    question: "Is my smart contract information secure with Aegis AI?",
     answer:
-      "Aegis Trading Infrastructure AI improves trading experience. We offer assistance for decentralized exchanges, security guarantees for trading platforms. In a safe trading environment, we want to protect the integrity of transactions and provide traders the tools they need to make wise trading decisions.",
+      "Yes, we take data security seriously. Your smart contract information is securely stored, and our platform follows industry-standard security protocols to protect your data.",
   },
   {
-    question: "What role does Aegis play in privacy and anonymity?",
+    question: "If we want our audit public, how do we go about it?",
     answer:
-      "Aegis places a high priority on user privacy and anonymity by utilizing decentralized AI, AegisOS, and onion routing. These technologies provide a reliable online environment where user data and communications are kept private and secret by ensuring safe, private, and anonymous transactions.",
+      "Once our audit report has been generated, you’ll then have the option to select if you’d like it to be linked within our Github for the public to see. This boosts your security score on your profile.",
   },
   {
-    question: "What is Aegis Telegram Bot and how does it work?",
+    question: "Does Aegis have staking and revenue share?",
     answer:
-      "Aegis Telegram Bot offers real-time threat monitoring, hack notifications, and social and token audits information. It alerts users to possible security risks so they may quickly take precautions to protect their digital assets. The bot is a useful resource for being current with the state of decentralized ecosystem security.",
+      "At Aegis Ai we believe in giving back to our community/holders. Holders of $AEGIS will have the option to stake their tokens in return of the revenue that we generate, 80% of all income streams fall back into stakers hands, along with 2% tax received from token trading.",
   },
   {
-    question: "How does Aegis prioritize community involvement?",
+    question: "How can I get started with Aegis AI?",
     answer:
-      "Aegis adopts a security strategy that is focused on the community. Through our community forums, bug bounty programs, and cooperative projects, users, developers, and enthusiasts are actively involved in helping to create a decentralized ecosystem that is more secure. Come interact with like-minded people in our community and help shape the direction of decentralized security in the future.",
+      "Getting started with Aegis AI is easy. Simply sign up on our platform, upload your smart contract, and initiate the audit. You'll receive real-time results and actionable insights to secure your digital assets.",
   },
 ];
