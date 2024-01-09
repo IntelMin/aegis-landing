@@ -4,7 +4,6 @@ import { TokenomicsSection } from "..";
 import { ImageCard } from "./image-card";
 import { isViewportValid } from "@/utils/mediaQuery";
 import { Information } from "../flow";
-import Popup from "reactjs-popup";
 
 export const Demo = () => {
   const isMobile = isViewportValid(700);
@@ -19,10 +18,12 @@ export const Demo = () => {
     isMobile ? "/demoMobileImage.png" : "/demoImage.svg"
   );
 
-  const handleImageClick = (imageUrl) => {
+  const handleImageClick = (imageUrl: string) => {
     setMainImage(imageUrl);
   };
 
+  
+  
   return (
     <div id="demo" className="bg-circle mb-10">
       <div className="w-full pt-[20px] flex max-md:flex-col max-md:gap-10 max-md:px-6 bg">
