@@ -10,7 +10,6 @@ export const Roadmap = () => {
           <h1 className="text-4xl text-center text-white font-black mt-4">
             Roadmap
           </h1>
-
           <div className="flex-cols justify-start items-start border-l-[12px] border-white mx-12 relative mt-[80x] text-sm">
             <div
               className="flex-cols list-none text-white  relative  "

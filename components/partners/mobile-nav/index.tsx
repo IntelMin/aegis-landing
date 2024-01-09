@@ -20,7 +20,7 @@ export const MobileNav = ({ setIsNavOpen }: Props) => {
     },
     {
       name: "Tokenomics",
-      link: "#demo",
+      link: "#tokenomics",
     },
     {
       name: "Whitepaper",

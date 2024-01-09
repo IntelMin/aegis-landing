@@ -12,8 +12,10 @@ export const TokenomicsSection = () => {
   }
   
   return (
-    <div className="flex flex-col gap-16 mt-[70px] items-center w-full md:px-16 text-white">
-      <h2 className="text-4xl font-bold text-center">Tokenomics</h2>
+    <div className="flex flex-col gap-16 mt-[70px] items-center w-full md:px-16 text-white" id="tokenomics">
+      <h1 className="text-4xl text-center text-white font-black mt-4">
+            Tokenomics
+          </h1>
       {/* Polygon section */}
       <div className="flex gap-5 max-md:justify-center max-md:w-screen relative pl-9">
         <Image

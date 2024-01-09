@@ -29,15 +29,6 @@ export const FooterSection = () => {
               HOME
             </a>
             <a href="#" className="text-sm hover:underline">
-              GAMES
-            </a>
-            <a href="#" className="text-sm hover:underline">
-              BLOG
-            </a>
-            <a href="#" className="text-sm hover:underline">
-              PRESS
-            </a>
-            <a href="#" className="text-sm hover:underline">
               CAREERS
             </a>
             <a href="#" className="text-sm hover:underline">

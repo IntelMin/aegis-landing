@@ -39,7 +39,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       <div className="w-[17.5%] flex items-center justify-center nav-ele-bg max-md:hidden ">
         <Link
           className="text-[#FFFFFF80] text-[16px] text-center w-full"
-          href="#demo"
+          href="#tokenomics"
         >
           Tokenomics
         </Link>
@@ -49,8 +49,8 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
           className="text-[#FFFFFF80] flex items-center justify-center z-[2]"
           href="#home"
         >
-          <div className="logo-bg relative z-[3] w-[100px] flex items-center justify-center logo-bg">
-            <Image src="/logo.png" alt="logo" width={70} height={70} />
+          <div className="logo-bg relative z-[3] w-[140px] flex items-center justify-center logo-bg">
+            <Image src="/aegisNew.png" alt="logo" width={120} height={120} />
           </div>
         </Link>
         <div className="absolute w-[100%] h-[150%] bottom-0 left-0 -translate-x-[30%] nav-absolute-ele" />
@@ -76,7 +76,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
         {!isMobile ? (
           <Link
             className="text-[#FFFFFF80] text-[16px] text-center w-full"
-            href="link"
+            href="#home"
           >
             <div className="flex flex-col gap-2">
               <p>Token Price</p>

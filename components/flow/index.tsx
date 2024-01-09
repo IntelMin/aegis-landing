@@ -22,7 +22,7 @@ export const Information = (props: Props) => {
   return (
     <div id="about" className="bg">
       <video autoPlay muted loop className="max-md:hidden">
-        <source src="./Information.mp4" type="video/mp4" />
+        <source src="./Information.webm" type="video/webm" />
       </video>
       <div className="md:hidden flex items-center mt-8 flex-col gap-10">
         <div className="flex flex-col gap-3 p-5 items-center bg-[#27272A] w-[235px] info-card-clip">
