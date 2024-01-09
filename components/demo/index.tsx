@@ -45,7 +45,7 @@ export const Demo = () => {
               <ImageCard
                 key={index}
                 demo={demo}
-                onClick={() => handleImageClick(demo.url)}
+                onClick={handleImageClick}
               />
             ))}
           </div>
