@@ -5,9 +5,10 @@ type Props = {
   demo: {
     url: string;
   };
+  onClick: (imageUrl: string) => void
 };
 
-export const ImageCard = ({ demo }: Props) => {
+export const ImageCard = ({ demo, onClick }: Props) => {
   return (
     <div className="col-span-1 flex justify-center items-center max-md:w-[300px] mt-4 ">
       <Image
@@ -16,6 +17,7 @@ export const ImageCard = ({ demo }: Props) => {
         width={212}
         height={152}
         className="object-cover max-md:min-w-[180px] w-[80%]"
+        onClick={() => onClick(demo.url)}
       />
     </div>
   );

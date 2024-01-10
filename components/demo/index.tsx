@@ -1,5 +1,5 @@
+import React, { useState } from "react";
 import Image from "next/image";
-import React from "react";
 import { TokenomicsSection } from "..";
 import { ImageCard } from "./image-card";
 import { isViewportValid } from "@/utils/mediaQuery";
@@ -8,20 +8,22 @@ import { Information } from "../flow";
 export const Demo = () => {
   const isMobile = isViewportValid(700);
   const demoImages = [
-    {
-      url: "/democollection/image 8.png",
-    },
-    {
-      url: "/democollection/image 9.png",
-    },
-    {
-      url: "/democollection/image 10.png",
-    },
-    {
-      url: "/democollection/image 11.png",
-    },
+    { url: "/democollection/image 8.png" },
+    { url: "/democollection/image 9.png" },
+    { url: "/democollection/image 10.png" },
+    { url: "/democollection/image 11.png" },
   ];
 
+  const [mainImage, setMainImage] = useState(
+    isMobile ? "/demoMobileImage.png" : "/demoImage.svg"
+  );
+
+  const handleImageClick = (imageUrl: string) => {
+    setMainImage(imageUrl);
+  };
+
+  
+  
   return (
     <div id="demo" className="bg-circle mb-10">
       <div className="w-full pt-[20px] flex max-md:flex-col max-md:gap-10 max-md:px-6 bg">
@@ -40,13 +42,17 @@ export const Demo = () => {
           </div>
           <div className="grid grid-cols-2 gap-2 pl-10 mt-4 max-md:hidden">
             {demoImages.map((demo, index) => (
-              <ImageCard key={index} demo={demo} />
+              <ImageCard
+                key={index}
+                demo={demo}
+                onClick={handleImageClick}
+              />
             ))}
           </div>
         </div>
         <div className="w-full md:w-[60%]">
           <Image
-            src={isMobile ? "/demoMobileImage.png" : "/demoImage.png"}
+            src={mainImage}
             alt="demo"
             width={1920}
             height={1080}
@@ -56,7 +62,11 @@ export const Demo = () => {
         </div>
         <div className="gap-2 flex overflow-x-scroll md:pl-10 my-4 mb-8 md:hidden">
           {demoImages.map((demo, index) => (
-            <ImageCard key={index} demo={demo} />
+            <ImageCard
+              key={index}
+              demo={demo}
+              onClick={() => handleImageClick(demo.url)}
+            />
           ))}
         </div>
       </div>
