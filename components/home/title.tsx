@@ -74,14 +74,14 @@ export const Title = (props: Props) => {
       <div className="flex items-center max-md:justify-between md:gap-5 max-md:mt-[200px] max-md:px-3 z-[10]">
         <Link
           href="https://app.uniswap.org/swap?outputCurrency=0x55a8f6c6b3aa58ad6d1f26f6afeded78f32e19f4"
-          className="z-[10] text-white text-lg font-[400] min-w-[170px] text-center px-4 md:px-12 py-3 md:py-[18px] rounded-[40px] md:rounded-xl bg-gradient-to-br from-[#2b2b2b] to-[black] border border-2 border-[#0f0f0f] hover:border-[#363636] hover:from-[black] hover:to-[#2b2b2b]  transition-all ease-in duration-350"
+          className="z-[10] text-white text-lg font-[400] min-w-[170px] text-center px-4 md:px-12 py-3 md:py-[18px] rounded-[15px] md:rounded-xl bg-gradient-to-br from-[#2b2b2b] to-[black] border border-2 border-[#0f0f0f] hover:border-[#363636] hover:from-[black] hover:to-[#2b2b2b]  transition-all ease-in duration-350"
         >
           Buy <span className="font-bold">$AEGIS</span>
         </Link>
 
         <Link
           href="https://www.dextools.io/app/ether/pair-explorer/0xFe73c784D047ff1bfc06230D6001DDc9FF1F59BB"
-          className="text-white text-lg font-[400] px-6 md:px-16 py-3 md:py-[18px] rounded-[40px] md:rounded-xl bg-black hover:bg-[#82828245] border border-2 border-[#FFFFFF85] hover:border-[#fff] transition-all ease-in duration-350"
+          className="text-white text-lg font-[400] px-6 md:px-16 py-3 md:py-[18px] rounded-[15px] md:rounded-xl bg-black hover:bg-[#82828245] border border-2 border-[#FFFFFF85] hover:border-[#fff] transition-all ease-in duration-350"
         >
           Live Chart
         </Link>
