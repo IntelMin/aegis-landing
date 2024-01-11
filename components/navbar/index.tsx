@@ -52,9 +52,10 @@ export const NavbarSection = (props: Props) => {
     <>
       <AnimatePresence initial={false}>
         isScrolling ? (
+          {/* <NavBarFixed  isScrolling={isScrolling} coinData={coinDetail} navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} /> */}
         <NavbarScroll isScrolling={isScrolling} navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} />
         ) : (
-        <NavBarFixed coinData={coinDetail} navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} />)
+        <NavBarFixed coinData={coinDetail} navEle={navEle} isNavOpen={props.isNavOpen} setIsNavOpen={props.setIsNavOpen} isScrolling={isScrolling} />)
       </AnimatePresence>
     </>
   );

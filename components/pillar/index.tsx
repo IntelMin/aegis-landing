@@ -1,13 +1,32 @@
+"use client";
+
 import React from "react";
 import { Card } from "./card";
 import { isViewportValid } from "@/utils/mediaQuery";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 type Props = {};
 
 export const PillarsSection = (props: Props) => {
+  const boxVariant = {
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0 }
+  };
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   const isMobile = isViewportValid(700);
   return (
-    <div className="bg flex flex-col gap-16 w-full px-4 md:px-16 p-[70px] mt-[10px]" id="features">
+    <div className="bg flex flex-col gap-16 w-full px-4 md:pl-[13rem] md:pr-[3rem] p-[70px] mt-[10px]" id="features">
       <div className="flex flex-col gap-0 md:gap-3 max-md:items-center">
         <h1 className="text-[#3F3F46] text-[40px] md:text-[64px] font-[600] md:leading-[80px]">
           Discover Our
@@ -17,7 +36,10 @@ export const PillarsSection = (props: Props) => {
         </h2>
       </div>
       {/* Cards Section */}
-      <div className="max-md:flex grid grid-cols-3 gap-8 w-full overflow-x-scroll md:pt-[128px] md:translate-y-[-128px]">
+      <motion.div ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control} className="max-md:flex grid grid-cols-3 gap-8 w-full overflow-x-scroll md:pt-[128px] md:translate-y-[-128px] justify-center items-center">
         <Card
           title="Decentralized Trust"
           description="Aegis is founded on the principles of decentralization, trust is dispersed throughout our network. We create a transparent, flexible, and resilient trust architecture by utilizing cutting-edge technologies and AI."
@@ -36,7 +58,7 @@ export const PillarsSection = (props: Props) => {
           image="lock"
           translate={isMobile ? "" : "-translate-y-32"}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

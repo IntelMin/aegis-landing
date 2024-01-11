@@ -16,7 +16,7 @@ export const ImageCard = ({ demo, onClick }: Props) => {
         alt="demo"
         width={212}
         height={152}
-        className="object-cover max-md:min-w-[180px] w-[80%]"
+        className="object-cover max-md:min-w-[180px] w-[80%] rounded-md border-4 border-[#27272A] hover:border-white"
         onClick={() => onClick(demo.url)}
       />
     </div>

@@ -1,11 +1,33 @@
+"use client"
+
 import Image from "next/image";
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 type Props = {};
 
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 }
+};
+
 export const AboutSection = (props: Props) => {
+  
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
   return (
     <div
+      
       id="about"
       className="bg flex max-md:flex-col gap-4 md:gap-16 max-md:items-center w-full h-full px-4 md:pl-10 md:pr-[160px] md:py-[100px]"
     >
@@ -26,7 +48,12 @@ export const AboutSection = (props: Props) => {
           height={300}
         />
       </div>
-      <div className="flex flex-col gap-12 md:w-[60%]">
+      <motion.div 
+      ref={ref}
+      variants={boxVariant}
+      initial="hidden"
+      animate={control}
+      className="flex flex-col gap-12 md:w-[60%]">
         <div className="flex gap-1">
           <h1 className="text-white text-[40px] max-md:leading-[90px] md:text-[56px] font-medium">
             A
@@ -62,7 +89,7 @@ export const AboutSection = (props: Props) => {
         <div className="md:hidden flex items-center w-full justify-center my-6">
           <Image src="/about.png" alt="about-bg" width={350} height={300} />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
