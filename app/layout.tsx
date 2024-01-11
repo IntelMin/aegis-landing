@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Provider } from "@/components";
+import Head from 'next/head';
 
 const satoshi = localFont({
   src: [
@@ -37,20 +38,22 @@ const satoshi = localFont({
 
 export const metadata: Metadata = {
   title: "Aegis AI",
-  description: "Audit your code for security vulnerabilities",
+  description: "Discover the power smart contract security without expert reliance. AI-Enabled Audit Solutions in seconds.",
 };
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html lang="en">
+      <Head>
+        <meta property="og:image" content="https://i.imgur.com/biKpvWI.jpeg" />
+      </Head>
       <body className={`${satoshi.className} bg-black`}>
         <Provider>{children}</Provider>
       </body>
     </html>
   );
 }
+
