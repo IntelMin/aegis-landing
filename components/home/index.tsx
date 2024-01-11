@@ -25,7 +25,7 @@ export const HomeSection = (props: Props) => {
   };
 
   return (
-    <div id="home" className="bg-black w-full" onMouseMove={updateMousePosition}>
+    <div id="home" className="bg-black w-full h-screen" onMouseMove={updateMousePosition}>
       <div className="w-full h-full pt-[100px] relative">
         <Image
           src="/linear.png"
@@ -37,8 +37,8 @@ export const HomeSection = (props: Props) => {
         <div className="py-12 px-3 md:px-16 z-[10] relative">
           <Title mousePosition={mousePosition} />
         </div>
-        <div className="max-md:hidden absolute bottom-0 right-0 w-[100%] h-[100%] overflow-hidden shadow-md shadow-black">
-          <video autoPlay loop muted className="w-full h-full object-cover">
+        <div className="max-md:hidden absolute bottom-0 right-0 w-[100%] h-screen overflow-hidden shadow-md shadow-black mb-1">
+          <video autoPlay loop muted className="w-full h-full object-cover ">
             <source src="/factory.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
