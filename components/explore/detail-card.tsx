@@ -4,6 +4,8 @@ import Image from "next/image";
 import React from "react";
 import Tilt from "react-parallax-tilt";
 
+
+
 type Props = {
   title: string;
   description: string;
@@ -11,7 +13,9 @@ type Props = {
   gradient: string;
 };
 
+
 export const DetailCard = ({ title, description, image, gradient }: Props) => {
+  
   return (
     <Tilt>
       <div

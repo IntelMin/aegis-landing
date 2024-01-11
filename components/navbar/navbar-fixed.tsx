@@ -11,13 +11,14 @@ type Props = {
   }[];
   isNavOpen: boolean;
   setIsNavOpen: (isNavOpen: boolean) => void;
-  coinData: TokenDetail | null
+  coinData: TokenDetail | null;
+  isScrolling:boolean;
 };
 
-export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
+export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen, isScrolling }: Props) => {
   const isMobile = isViewportValid(700);
   return (
-    <div className="absolute w-[100vw] top-0 left-0 flex items-center nav-container z-[100]">
+    <div className={`absolute w-[100vw] top-0 left-0 flex items-center nav-container z-[100] `}>
       <div className="w-[33%] md:w-[10%] flex items-center justify-center nav-ele-bg">
         <div>
           <Link

@@ -8,10 +8,10 @@ import { Information } from "../flow";
 export const Demo = () => {
   const isMobile = isViewportValid(700);
   const demoImages = [
-    { url: "/democollection/image 8.png" },
-    { url: "/democollection/image 9.png" },
-    { url: "/democollection/image 10.png" },
-    { url: "/democollection/image 11.png" },
+    { url: "/democollection/dashboard.svg" },
+    { url: "/democollection/live.svg" },
+    { url: "/democollection/tokenaudit.svg" },
+    { url: "/democollection/tokenaudithome.svg" },
   ];
 
   const [mainImage, setMainImage] = useState(
@@ -50,17 +50,17 @@ export const Demo = () => {
             ))}
           </div>
         </div>
-        <div className="w-full md:w-[60%]">
+        <div className="w-full md:w-[60%] md:h-[868px]">
           <Image
             src={mainImage}
             alt="demo"
             width={1920}
             height={1080}
             layout="responsive"
-            className="md:object-cover"
+            className="md:object-cover "
           />
         </div>
-        <div className="gap-2 flex overflow-x-scroll md:pl-10 my-4 mb-8 md:hidden">
+        <div className="gap-2 flex overflow-x-scroll md:pl-10 my-4 mb-8 md:hidden ">
           {demoImages.map((demo, index) => (
             <ImageCard
               key={index}
