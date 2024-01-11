@@ -21,7 +21,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       <div className="w-[33%] md:w-[10%] flex items-center justify-center nav-ele-bg">
         <div>
           <Link
-            className={`text-[#FFFFFF] md:text-[#FFFFFF80] transition-all ease-in duration-150 text-[16px] text-center w-full`}
+            className={`text-[#FFFFFF] md:text-[#FFFFFF80] transition-all ease-in duration-150 text-[16px] text-center w-full hover:text-white`}
             href={isMobile ? "#home" : "#about"}
           >
             {isMobile ? "Home" : "About"}
@@ -30,7 +30,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       </div>
       <div className="w-[14.5%] flex items-center justify-center nav-ele-bg max-md:hidden ">
         <Link
-          className="translate-x-4 text-[#FFFFFF80] text-[16px] text-center w-full"
+          className="translate-x-4 text-[#FFFFFF80] text-[16px] text-center w-full hover:text-white transition-all ease-in duration-150"
           href="#roadmap"
         >
           Roadmap
@@ -38,7 +38,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       </div>
       <div className="w-[17.5%] flex items-center justify-center nav-ele-bg max-md:hidden ">
         <Link
-          className="text-[#FFFFFF80] text-[16px] text-center w-full"
+          className="text-[#FFFFFF80] text-[16px] text-center w-full hover:text-white transition-all ease-in duration-150"
           href="#tokenomics"
         >
           Tokenomics
@@ -58,7 +58,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       </div>
       <div className="w-[17.5%] flex items-center justify-center nav-ele-bg max-md:hidden ">
         <Link
-          className="text-[#FFFFFF80] text-[16px] text-center w-full"
+          className="text-[#FFFFFF80] text-[16px] text-center w-full hover:text-white transition-all ease-in duration-150"
           href="#demo"
         >
           Whitepaper
@@ -66,7 +66,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
       </div>
       <div className="w-[12.5%] flex items-center justify-center nav-ele-bg max-md:hidden">
         <Link
-          className="text-[#FFFFFF80] text-[16px] text-center w-full"
+          className="text-[#FFFFFF80] text-[16px] text-center w-full hover:text-white transition-all ease-in duration-150"
           href="#faq"
         >
           FAQ
@@ -78,7 +78,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen }: Props) => {
             className="text-[#FFFFFF80] text-[16px] text-center w-full"
             href="#home"
           >
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 hover:text-white transition-all ease-in duration-150">
               <p>Token Price</p>
               <div className="flex items-center gap-2 justify-center">
                 <div className="w-[8px] h-[8px] rounded-full bg-white" />
