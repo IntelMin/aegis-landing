@@ -47,9 +47,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta property="og:image" content="https://i.imgur.com/biKpvWI.jpeg" />
-      </Head>
       <body className={`${satoshi.className} bg-black`}>
         <Provider>{children}</Provider>
       </body>
