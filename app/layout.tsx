@@ -50,6 +50,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta property="og:image:type" content="Website" />
+        <meta property="og:image" content="./opengraph-image.jpg" />
+        <meta property="og:image:width" content="980" />
+        <meta property="og:image:height" content="630" />
+      </Head>
       <body className={`${satoshi.className} bg-black`}>
         <Provider>{children}</Provider>
       </body>
