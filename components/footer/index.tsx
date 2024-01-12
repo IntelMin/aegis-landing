@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaRegNewspaper } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import Link from "next/link";
+import { FollowSection } from "./follow";
 
 export const FooterSection = () => {
   const socialLinks = [
@@ -13,6 +14,8 @@ export const FooterSection = () => {
   ];
 
   return (
+    <>
+    <FollowSection/>
     <footer className="bg-footer text-white px-5 md:px-20 pt-4 pb-6">
       <div className="container mx-auto">
         <div className="flex flex-col items-start justify-start text-start gap-4">
@@ -76,5 +79,6 @@ export const FooterSection = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
