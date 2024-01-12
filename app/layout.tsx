@@ -39,6 +39,9 @@ const satoshi = localFont({
 export const metadata: Metadata = {
   title: "Aegis AI",
   description: "Discover the power smart contract security without expert reliance. AI-Enabled Audit Solutions in seconds.",
+  openGraph: {
+    images: './opengraph-image.jpg',
+  },
 };
 export default function RootLayout({
   children,
