@@ -1,0 +1,4 @@
+hey
+use hdri 4X strength
+use video texture loop (image 1)
+use lights (image 2)

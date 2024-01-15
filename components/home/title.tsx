@@ -88,9 +88,9 @@ export const Title = (props: Props) => {
       </div>
       <div className="md:w-1/2 mt-4 md:translate-x-[40px]">
         <Canvas
-          className="h-[350px]"
+          className="h-[365px]"
           style={{
-            height: "350px",
+            height: "360px",
             width: isMobile ? "" : "550px",
             transform: isMobile ? "translateX(0)" : "translateX(-70px)",
           }}

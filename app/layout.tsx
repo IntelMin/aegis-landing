@@ -35,14 +35,22 @@ const satoshi = localFont({
   ],
 });
 
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://aegis-landing.vercel.app"),
   title: "Aegis AI",
   description: "Discover the power smart contract security without expert reliance. AI-Enabled Audit Solutions in seconds.",
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+      'de-DE': '/de-DE',
+    },
+  },
   openGraph: {
-    images: './opengraph-image.jpg',
+    images: '/opengraph-image.jpg',
   },
 };
+
 export default function RootLayout({
   children,
 }: {
