@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Canvas } from "@react-three/fiber";
 import { Robo } from "./robo";
-import { PerspectiveCamera } from "@react-three/drei";
+import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { isViewportValid } from "@/utils/mediaQuery";
 
 type MouseProps = {
@@ -96,9 +96,16 @@ export const Title = (props: Props) => {
           }}
         >
           <ambientLight intensity={1.7} />
-          <directionalLight position={[10, 10, 10]} intensity={3} />
-          <pointLight position={[10, 10, 10]} />
-          {/* <PerspectiveCamera makeDefault position={[-10, 0, -90]} fov={75} /> */}
+          {/* <directionalLight position={[10, 10, 10]} intensity={3} />
+          <pointLight position={[10, 10, 10]} /> */}
+          <perspectiveCamera
+        fov={45}
+        aspect={16/9}
+        near={0.1}
+        far={1000}
+        position={[0, 0, 50]}
+      />
+        <OrbitControls enableZoom={false} enablePan={false} />
           <Robo mousePosition={props.mousePosition} />
         </Canvas>
       </div>
