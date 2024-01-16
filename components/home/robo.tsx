@@ -44,7 +44,7 @@ export const Robo = (props: Props) => {
     }
   });
 
-  function VideoMaterial({ url }) {
+  function VideoMaterial({ url }: { url: string }) {
     const texture = useVideoTexture(url);
     return <MeshDistortMaterial
     map={texture}
@@ -52,7 +52,7 @@ export const Robo = (props: Props) => {
     toneMapped={true}
   />;
   }
-  function VideoMaterialInner({ url }) {
+  function VideoMaterialInner({ url }: { url: string }) {
     const texture = useVideoTexture(url);
     return <MeshDistortMaterial
     map={texture}
