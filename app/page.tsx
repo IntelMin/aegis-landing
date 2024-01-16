@@ -29,7 +29,7 @@ export default function Home() {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 7880);
+    }, 7500);
   }, []);
   return isMobile ? (
     <main className="flex min-h-screen flex-col bg-black relative">
@@ -76,7 +76,7 @@ const Preloader: React.FC<PreloaderProps> = ({ setIsLoading }) => (
   <div className="absolute max-md:hidden top-0 left-0 w-full h-full z-[999]">
     <div className="relative w-full h-full">
       <video autoPlay loop={false} muted className="w-full h-full object-cover">
-        <source src="/preloader.mp4" type="video/mp4" />
+        <source src="/newEnter.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <button
