@@ -105,7 +105,6 @@ export const Title = (props: Props) => {
         far={1000}
         position={[0, 0, 50]}
       />
-        <OrbitControls enableZoom={false} enablePan={false} />
           <Robo mousePosition={props.mousePosition} />
         </Canvas>
       </div>

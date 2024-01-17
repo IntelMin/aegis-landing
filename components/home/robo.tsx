@@ -63,8 +63,10 @@ export const Robo = (props: Props) => {
 
   return (
     <>
-      {/* <ambientLight intensity={2} />
-      <directionalLight position={[2, 3, 8]} intensity={2} /> */}
+      <ambientLight intensity={6} />
+      <directionalLight position={[6, 6, 2  ]} intensity={5} />
+      <pointLight position={[1,1,3]} intensity={3} />
+      <pointLight position={[-1,-3,5]} intensity={6} />
       <group>
         <mesh ref={mesh} scale={[1.4, 1.4, 1.4]} {...props}>
           <primitive object={gltf.scene} />
@@ -82,8 +84,6 @@ export const Robo = (props: Props) => {
         </mesh>
         </mesh>
       </group>
-      
-      <Environment preset="park" />
     </>
   );
 };
