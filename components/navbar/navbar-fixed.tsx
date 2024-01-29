@@ -60,7 +60,7 @@ export const NavBarFixed = ({ coinData, isNavOpen, setIsNavOpen, isScrolling }: 
       <div className="w-[17.5%] flex items-center justify-center nav-ele-bg max-md:hidden ">
         <Link
           className="text-[#FFFFFF80] text-[16px] text-center w-full hover:text-white transition-all ease-in duration-150"
-          href="https://aegis-ai.gitbook.io/aegis-ai-whitepaper/"
+          href="/wp.pdf"
         >
           Whitepaper
         </Link>
