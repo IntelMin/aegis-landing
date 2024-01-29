@@ -33,7 +33,8 @@
     "react-use-measure": "^2.1.1",
     "react-vertical-timeline-component": "^3.6.0",
     "reactjs-popup": "^2.0.6",
-    "three": "^0.160.0"
+    "three": "^0.160.0",
+    "use-resize-observer": "^9.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
