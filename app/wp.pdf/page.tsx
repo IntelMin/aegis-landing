@@ -41,7 +41,7 @@ const WhitePaper = (props: Props) => {
         onLoadSuccess={onDocumentLoadSuccess}
       >
         {Array.from({ length: 32 }, (_, index) => index + 1)?.map((page, i) => (
-          <div key={i} className={`h-[240px] md:h-screen overflow-hidden`}>
+          <div key={i} className={`h-[220px] md:h-screen overflow-hidden bg-black`}>
             <Page
               loading={
                 <div className="flex items-center justify-center w-full h-screen">

@@ -24,7 +24,7 @@ export const MobileNav = ({ setIsNavOpen }: Props) => {
     },
     {
       name: "Whitepaper",
-      link: "#demo",
+      link: "/wp.pdf",
     },
     {
       name: "FAQ",
